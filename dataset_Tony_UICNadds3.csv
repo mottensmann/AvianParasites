@@ -184,235 +184,235 @@
 183;Variable Sunbird;Cinnyris venustus;Nectarinia venusta;Savanna - Dry & Shrubland - Subtropical/Tropical Dry;Omnivorous;Shrub and tree;Closed;Shrub;Yes;Klaas' Cuckoo;NA;NA;NA;Resident
 184;Western Marsh-harrier;Circus aeruginosus;NA;Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands & Wetlands (inland) - Permanent Freshwater Marshes/Pools (under 8ha);Omnivorous;Ground;Open;Ground;No;;29100000;3000;0;Migratory
 185;Chattering Cisticola;Cisticola anonymus;NA;Shrubland - Subtropical/Tropical Moist;Insectivorous;Ground and Shrub;Closed;Shrub;Yes;Klaas' Cuckoo;5230000;NA;NA;Resident
-186;Short-winged Cisticola;Cisticola brachypterus;NA;Savanna - Dry;;;;;;;17900000;NA;NA;Resident
-187;Red-faced Cisticola;Cisticola erythrops;NA;Shrubland - Subtropical/Tropical Dry;;;;;;;19400000;2400;NA;Resident
-188;Croaking Cisticola;Cisticola natalensis;NA;Savanna - Dry & Grassland - Subtropical/Tropical Dry & Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands;;;;;;;20400000;NA;NA;Resident
-189;Black-lored Cisticola;Cisticola nigriloris;NA;Shrubland - Subtropical/Tropical Dry & Grassland - Subtropical/Tropical High Altitude;;;;;;;210000;NA;NA;Resident
-190;Churring Cisticola;Cisticola njombe;NA;Shrubland - Subtropical/Tropical High Altitude & Grassland - Subtropical/Tropical High Altitude;;;;;;;133000;3000;1830;Resident
-191;Tinkling Cisticola;Cisticola rufilatus;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;;;;;;;4700000;NA;NA;Resident
+186;Short-winged Cisticola;Cisticola brachypterus;NA;Savanna - Dry;Insectivorous;Ground and Shrub;Closed;Shrub;No;;17900000;NA;NA;Resident
+187;Red-faced Cisticola;Cisticola erythrops;NA;Shrubland - Subtropical/Tropical Dry;Insectivorous;Shrub and tree;Closed;Shrub;Yes ;Klaas' Cuckoo and Cuckoo Finch;19400000;2400;NA;Resident
+188;Croaking Cisticola;Cisticola natalensis;NA;Savanna - Dry & Grassland - Subtropical/Tropical Dry & Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands;Omnivorous;Ground and shrub;Closed;Ground and Shrub;Yes ;Cuckoo Finch;20400000;NA;NA;Resident
+189;Black-lored Cisticola;Cisticola nigriloris;NA;Shrubland - Subtropical/Tropical Dry & Grassland - Subtropical/Tropical High Altitude;Insectivorous;Shrub;Closed;Ground and Shrub;NA;;210000;NA;NA;Resident
+190;Churring Cisticola;Cisticola njombe;NA;Shrubland - Subtropical/Tropical High Altitude & Grassland - Subtropical/Tropical High Altitude;Insectivorous;Ground and Shrub;Closed;Ground and Shrub;NA;;133000;3000;1830;Resident
+191;Tinkling Cisticola;Cisticola rufilatus;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;Insectivorous;Ground and Shrub;Closed;Ground and Shrub;Yes;Brown-backed Honeyguide;4700000;NA;NA;Resident
 192;Trilling Cisticola;Cisticola woosnami;NA;Savanna - Dry;Insectivorous;Ground, shrub and tree;Closed;Shrub;NA;;1850000;NA;NA;Resident
-193;Marsh Wren;Cistothorus palustris;NA;Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands;;;;;;;10900000;2500;NA;Migratory
-194;Blue Ground-dove;Claravis pretiosa;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;18900000;1620;NA;Migratory
-195;Brown Treecreeper;Climacteris picumnus;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;3270000;NA;NA;Resident
-196;Swee Waxbill ;Coccopygia melanotis;Estrilda;Shrubland - Subtropical/Tropical Dry & Shrubland - Subtropical/Tropical Moist & Grassland - Subtropical/Tropical Dry;;;;;;;NA;NA;NA;NA
-197;Blue-throated Starfrontlet;Coeligena helianthea;NA;Forest - Subtropical/Tropical Moist Montane;;;;;;;101000;3300;1900;Resident
-198;Bananaquit;Coereba flaveola;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;22400000;1500;NA;Resident
-199;Speckled Mousebird;Colius striatus;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;16300000;2800;NA;Resident
-200;African Olive-pigeon;Columba arquatrix;NA;Forest - Subtropical/Tropical Moist Montane;;;;;;;11100000;3200;300;Resident
-201;Rock Dove;Columba livia;NA;Rocky areas (eg. inland cliffs, mountain peaks);;;;;;;61000000;4500;NA;Resident
-202;Common Woodpigeon;Columba palumbus;NA;Forest - Temperate & Forest - Boreal;;;;;;;26800000;1600;NA;Migratory
-203;Scaled dove;Columbina squammata;Scardafella squammata;Artificial/Terrestrial - Subtropical/Tropical Heavily Degraded Former Forest;;;;;;;NA;NA;NA;NA
-204;Rufous Gnateater;Conopophaga lineata;NA;Forest - Subtropical/Tropical Moist Montane;;;;;;;2660000;2400;300;Resident
-205;Oriental Magpie-robin;Copsychus saularis;NA;Forest - Subtropical/Tropical Dry;;;;;;;19500000;1900;NA;Resident
-206;White-necked Raven;Corvus albicollis;NA;Forest - Subtropical/Tropical Moist Montane & Grassland - Subtropical/Tropical High Altitude & Rocky areas (eg. inland cliffs, mountain peaks);;;;;;;5660000;3000;1000;Resident
-207;American Crow;Corvus brachyrhynchos;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;12600000;NA;NA;Migratory
-208;Common Raven;Corvus corax;NA;Forest - Subtropical/Tropical Moist Montane & Rocky areas (eg. inland cliffs, mountain peaks) & Forest - Temperate;;;;;;;137000000;5000;NA;Migratory
-209;Carrion Crow;Corvus corone;NA;Forest - Temperate & Forest - Boreal & Forest - Subtropical/Tropical Dry;;;;;;;81600000;NA;NA;Migratory
-210;Large-billed Crow;Corvus macrorhynchos;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;39100000;NA;NA;Resident
-211;Pileated Finch;Coryphospingus pileatus;NA;Shrubland - Subtropical/Tropical Dry;;;;;;;9310000;1200;NA;Resident
-212;White-bellied kingfisher;Corythornis leucogaster;Alcedo leucogaster;Forest - Subtropical/Tropical Moist Lowland & Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls);;;;;;;NA;NA;NA;NA
-213;Madagascar Pygmy-kingfisher;Corythornis madagascariensis;NA;Savanna - Dry & Shrubland - Subtropical/Tropical Dry;;;;;;;591000;1500;NA;Resident
-214;White-browed Robin-chat;Cossypha heuglini;NA;Forest - Subtropical/Tropical Dry;;;;;;;13100000;NA;NA;Resident
-215;Red-capped Robin-chat;Cossypha natalensis;NA;Savanna - Dry & Shrubland - Subtropical/Tropical Moist;;;;;;;11900000;NA;NA;Resident
-216;Corncrake;Crex crex;NA;Grassland - Temperate & Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands;;;;;;;7070000;3000;NA;Migratory
-217;Red-tailed Greenbul;Criniger calurus;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;5710000;NA;NA;Resident
-218;Eastern Bearded Greenbul;Criniger chloronotus;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;2580000;NA;NA;Resident
-219;Abyssinian Citril;Crithagra citrinelloides;Serinus citrinelloides;Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls) & Wetlands (inland) - Permanent Freshwater Lakes (over 8ha);;;;;;;NA;NA;NA;NA
-220;Yellow-fronted canary;Crithagra mozambica;Serinus mozambicus;Savanna - Dry;;;;;;;NA;NA;NA;Resident
-221;Principe Seedeater;Crithagra rufobrunnea;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;;;;;;;4500;900;NA;Resident
-222;Streaky seedeater;Crithagra striolata;Serinus striolatus;Shrubland - Subtropical/Tropical Moist;;;;;;;NA;NA;NA;NA
-223;Red-faced Crimsonwing;Cryptospiza reichenovii;NA;Forest - Subtropical/Tropical Moist Montane;;;;;;;6260000;NA;NA;Resident
-224;Austral Blackbird;Curaeus curaeus;NA;Forest - Temperate;;;;;;;1700000;2000;NA;Resident
+193;Marsh Wren;Cistothorus palustris;NA;Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands;Omnivorous;Shrub;Closed;Shrub;No;;10900000;2500;NA;Migratory
+194;Blue Ground-dove;Claravis pretiosa;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground;Open;Shrub and tree;No;;18900000;1620;NA;Migratory
+195;Brown Treecreeper;Climacteris picumnus;NA;Forest - Subtropical/Tropical Moist Lowland;Insectivorous;Ground and Tree;Closed;Tree;No;;3270000;NA;NA;Resident
+196;Swee Waxbill ;Coccopygia melanotis;Estrilda;Shrubland - Subtropical/Tropical Dry & Shrubland - Subtropical/Tropical Moist & Grassland - Subtropical/Tropical Dry;Omnivorous;NA;Closed;Shrub;Yes;Pin-tailed Whydah;NA;NA;NA;NA
+197;Blue-throated Starfrontlet;Coeligena helianthea;NA;Forest - Subtropical/Tropical Moist Montane;Nectarivore;Shrub and tree;NA;NA;NA;;101000;3300;1900;Resident
+198;Bananaquit;Coereba flaveola;NA;Forest - Subtropical/Tropical Moist Lowland;Nectarivore;Shrub and tree;Closed;Shrub;No;;22400000;1500;NA;Resident
+199;Speckled Mousebird;Colius striatus;NA;Forest - Subtropical/Tropical Moist Lowland;Frugivorous;NA;Open;Shrub and tree;No;;16300000;2800;NA;Resident
+200;African Olive-pigeon;Columba arquatrix;NA;Forest - Subtropical/Tropical Moist Montane;Omnivorous;Ground, shrub and tree;Open;Shrub and tree;NA;;11100000;3200;300;Resident
+201;Rock Dove;Columba livia;NA;Rocky areas (eg. inland cliffs, mountain peaks);Granivore;NA;Open;NA;NA;;61000000;4500;NA;Resident
+202;Common Woodpigeon;Columba palumbus;NA;Forest - Temperate & Forest - Boreal;Omnivorous;Ground and Tree;Open;Shrub and tree;No;;26800000;1600;NA;Migratory
+203;Scaled dove;Columbina squammata;Scardafella squammata;Artificial/Terrestrial - Subtropical/Tropical Heavily Degraded Former Forest;Omnivorous;NA;NA;Ground and Shrub;NA;;NA;NA;NA;NA
+204;Rufous Gnateater;Conopophaga lineata;NA;Forest - Subtropical/Tropical Moist Montane;Insectivorous;Ground and shrub;NA;Shrub;NA;;2660000;2400;300;Resident
+205;Oriental Magpie-robin;Copsychus saularis;NA;Forest - Subtropical/Tropical Dry;Omnivorous;Ground;Cavity;Shrub and tree;Yes;Common cuckoo;19500000;1900;NA;Resident
+206;White-necked Raven;Corvus albicollis;NA;Forest - Subtropical/Tropical Moist Montane & Grassland - Subtropical/Tropical High Altitude & Rocky areas (eg. inland cliffs, mountain peaks);Omnivorous;Ground and tree;Open;Ground;No;;5660000;3000;1000;Resident
+207;American Crow;Corvus brachyrhynchos;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground;Open;Tree;No;;12600000;NA;NA;Migratory
+208;Common Raven;Corvus corax;NA;Forest - Subtropical/Tropical Moist Montane & Rocky areas (eg. inland cliffs, mountain peaks) & Forest - Temperate;Omnivorous;Ground and tree;Open;Ground and tree;No;;137000000;5000;NA;Migratory
+209;Carrion Crow;Corvus corone;NA;Forest - Temperate & Forest - Boreal & Forest - Subtropical/Tropical Dry;Omnivorous;Ground;Open;Tree;Yes ;Great spotted cuckoo;81600000;NA;NA;Migratory
+210;Large-billed Crow;Corvus macrorhynchos;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground and tree;Open;Tree;Yes;Common Koel;39100000;NA;NA;Resident
+211;Pileated Finch;Coryphospingus pileatus;NA;Shrubland - Subtropical/Tropical Dry;NA;Ground and Shrub;NA;NA;NA;;9310000;1200;NA;Resident
+212;White-bellied kingfisher;Corythornis leucogaster;Alcedo leucogaster;Forest - Subtropical/Tropical Moist Lowland & Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls);Omnivorous;Water;Cavity;Ground;NA;;NA;NA;NA;NA
+213;Madagascar Pygmy-kingfisher;Corythornis madagascariensis;NA;Savanna - Dry & Shrubland - Subtropical/Tropical Dry;Omnivorous;Ground;Cavity;Ground;NA;;591000;1500;NA;Resident
+214;White-browed Robin-chat;Cossypha heuglini;NA;Forest - Subtropical/Tropical Dry;Omnivorous;Ground;Open;Ground and Shrub;Yes;Red-chested Cuckoo;13100000;NA;NA;Resident
+215;Red-capped Robin-chat;Cossypha natalensis;NA;Savanna - Dry & Shrubland - Subtropical/Tropical Moist;Omnivorous;Ground;Open;Ground and Shrub;Yes ;Red-chested Cuckoo;11900000;NA;NA;Resident
+216;Corncrake;Crex crex;NA;Grassland - Temperate & Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands;Omnivorous;Ground;Open;Ground;No;;7070000;3000;NA;Migratory
+217;Red-tailed Greenbul;Criniger calurus;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Shrub and tree;Open;Shrub;No;;5710000;NA;NA;Resident
+218;Eastern Bearded Greenbul;Criniger chloronotus;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Shrub and tree;Open;Shrub;NA;;2580000;NA;NA;Resident
+219;Abyssinian Citril;Crithagra citrinelloides;Serinus citrinelloides;Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls) & Wetlands (inland) - Permanent Freshwater Lakes (over 8ha);Omnivorous;Ground and Shrub;Open;Shrub;NA;;NA;NA;NA;NA
+220;Yellow-fronted canary;Crithagra mozambica;Serinus mozambicus;Savanna - Dry;Omnivorous;Ground, shrub and tree;Open;Shrub and tree;No;;NA;NA;NA;Resident
+221;Principe Seedeater;Crithagra rufobrunnea;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground, shrub and tree;Open;NA;NA;;4500;900;NA;Resident
+222;Streaky seedeater;Crithagra striolata;Serinus striolatus;Shrubland - Subtropical/Tropical Moist;Omnivorous;Ground and Shrub;Open;Shrub;No;;NA;NA;NA;NA
+223;Red-faced Crimsonwing;Cryptospiza reichenovii;NA;Forest - Subtropical/Tropical Moist Montane;Omnivorous;Ground, shrub and tree;Closed;Shrub;No;;6260000;NA;NA;Resident
+224;Austral Blackbird;Curaeus curaeus;NA;Forest - Temperate;Omnivorous;Ground;Open;Shrub;No;;1700000;2000;NA;Resident
 225;Eurasian Blue Tit;Cyanistes caeruleus;NA;Forest - Temperate;Omnivorous;Tree, shrub and ground;Cavity;Shrub and tree;NA;;16600000;3500;NA;Migratory
-226;Olive Sunbird;Cyanomitra olivacea;Nectarinia olivacea;Forest - Subtropical/Tropical Dry;;;;;;;20300000;NA;NA;Resident
-227;Cameroon Sunbird;Cyanomitra oritis;NA;Forest - Subtropical/Tropical Moist Montane;;;;;;;132000;NA;NA;Resident
-228;Green-headed Sunbird;Cyanomitra verticalis;NA;Savanna - Dry;;;;;;;10200000;NA;NA;Resident
-229;Tundra Swan;Cygnus columbianus;NA;Grassland - Tundra;;;;;;;23500000;2000;NA;Migratory
-230;Whooper Swan;Cygnus cygnus;NA;Wetlands (inland) - Permanent Freshwater Lakes (over 8ha);;;;;;;29500000;NA;NA;Migratory
-231;Northern House Martin;Delichon urbicum;NA;Rocky areas (eg. inland cliffs, mountain peaks) & Artificial/Terrestrial - Urban Areas;;;;;;;30800000;2000;NA;Migratory
-232;Townsend's Warbler;Dendroica townsendi;Setophaga;Forest - Temperate & Forest - Subtropical/Tropical Moist Montane;;;;;;;NA;NA;NA;NA
-233;Olive-flanked ground robin;Dessonornis anomalus;Cossypha anomala;Forest - Subtropical/Tropical Moist Montane;;;;;;;NA;NA;NA;NA
-234;Cape robin-chat;Dessonornis caffer;Cossypha caffra;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry;;;;;;;NA;NA;NA;NA
-235;Fork-tailed Drongo;Dicrurus adsimilis;NA;Savanna - Dry;;;;;;;25900000;2200;NA;Resident
-236;Ashy Drongo;Dicrurus leucophaeus;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;16600000;NA;NA;Migratory
-237;Masked Flowerpiercer;Diglossa cyanea;NA;Forest - Subtropical/Tropical Moist Montane;;;;;;;3680000;3500;2000;Resident
-238;Lesser Spotted Wodpecker;Dryobates minor;Dendrocopos;Forest - Temperate & Forest - Boreal;;;;;;;NA;NA;NA;NA
-239;Chestnut Wattle-eye;Dyaphorophyia castanea;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;4640000;NA;NA;Resident
-240;White-crested Elaenia;Elaenia albiceps;NA;Forest - Temperate;;;;;;;8010000;3300;NA;Migratory
-241;White-tailed Crested-flycatcher;Elminia albonotata;NA;Forest - Subtropical/Tropical Moist Montane;;;;;;;2300000;2700;350;Resident
-242;Dusky Crested-flycatcher;Elminia nigromitrata;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;5140000;2150;NA;Resident
-243;Cabanis's Bunting;Emberiza cabanisi;NA;Savanna - Dry;;;;;;;12200000;NA;NA;Resident
-244;Cirl Bunting;Emberiza cirlus;NA;Shrubland - Temperate;;;;;;;6350000;NA;NA;Resident
+226;Olive Sunbird;Cyanomitra olivacea;Nectarinia olivacea;Forest - Subtropical/Tropical Dry;Omnivorous;Shrub and tree;Closed;Shrub and tree;Yes;African Emerald Cuckoo & Klaas Cuckoo;20300000;NA;NA;Resident
+227;Cameroon Sunbird;Cyanomitra oritis;NA;Forest - Subtropical/Tropical Moist Montane;Omnivorous;NA;Closed;Shrub;Yes;Klaas' Cuckoo;132000;NA;NA;Resident
+228;Green-headed Sunbird;Cyanomitra verticalis;NA;Savanna - Dry;Omnivorous;Shrub and tree;Closed;Shrub and tree;Yes;Klaas' Cuckoo;10200000;NA;NA;Resident
+229;Tundra Swan;Cygnus columbianus;NA;Grassland - Tundra;Herbivorous;Water/Ground;Open;Ground;No;;23500000;2000;NA;Migratory
+230;Whooper Swan;Cygnus cygnus;NA;Wetlands (inland) - Permanent Freshwater Lakes (over 8ha);Herbivorous;Water/Ground;Open;Ground;No;;29500000;NA;NA;Migratory
+231;Northern House Martin;Delichon urbicum;NA;Rocky areas (eg. inland cliffs, mountain peaks) & Artificial/Terrestrial - Urban Areas;Insectivorous;Air;Closed;Buildings;No;;30800000;2000;NA;Migratory
+232;Townsend's Warbler;Setophaga townsendi;Dendroica;Forest - Temperate & Forest - Subtropical/Tropical Moist Montane;Insectivorous;Shrub and tree;Open;Tree;Yes;few by Brown headed cowbird;NA;NA;NA;NA
+233;Olive-flanked ground robin;Dessonornis anomalus;Cossypha anomala;Forest - Subtropical/Tropical Moist Montane;Insectivorous;Ground and Shrub;NA;NA;NA;;NA;NA;NA;NA
+234;Cape robin-chat;Dessonornis caffer;Cossypha caffra;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry;Omnivorous;Ground, shrub and tree;Open;Ground and Shrub;Yes;Red-chested Cuckoo;NA;NA;NA;NA
+235;Fork-tailed Drongo;Dicrurus adsimilis;NA;Savanna - Dry;Omnivorous;Ground and Shrub;Open;Shrub and tree;Yes;African Cuckoo and Jacobin Cuckoo;25900000;2200;NA;Resident
+236;Ashy Drongo;Dicrurus leucophaeus;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Shrub and tree;Open;Tree;Yes;Indian Cuckoo;16600000;NA;NA;Migratory
+237;Masked Flowerpiercer;Diglossa cyanea;NA;Forest - Subtropical/Tropical Moist Montane;Omnivorous;Tree;Open;Shrub;NA;;3680000;3500;2000;Resident
+238;Lesser Spotted Wodpecker;Dryobates minor;Dendrocopos;Forest - Temperate & Forest - Boreal;Insectivorous;Tree;Cavity;Tree;No;;NA;NA;NA;NA
+239;Chestnut Wattle-eye;Dyaphorophyia castanea;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Shrub and tree;Open;Shrub and tree;Yes;African Emerald Cuckoo;4640000;NA;NA;Resident
+240;White-crested Elaenia;Elaenia albiceps;NA;Forest - Temperate;Omnivorous;NA;Open;Shrub and tree;NA;;8010000;3300;NA;Migratory
+241;White-tailed Crested-flycatcher;Elminia albonotata;NA;Forest - Subtropical/Tropical Moist Montane;Insectivorous;Shrub and tree;Open;Shrub and tree;NA;;2300000;2700;350;Resident
+242;Dusky Crested-flycatcher;Elminia nigromitrata;NA;Forest - Subtropical/Tropical Moist Lowland;Insectivorous;Shrub and tree;Open;Shrub and tree;NA;;5140000;2150;NA;Resident
+243;Cabanis's Bunting;Emberiza cabanisi;NA;Savanna - Dry;Omnivorous;Ground;Open;Shrub;Yes;Klaas' Cuckoo;12200000;NA;NA;Resident
+244;Cirl Bunting;Emberiza cirlus;NA;Shrubland - Temperate;Omnivorous;Ground;Open;Shrub;No;;6350000;NA;NA;Resident
 245;Yellow-throated Bunting;Emberiza elegans;NA;Forest - Temperate & Forest - Boreal;Omnivorous;Ground;Open;Ground;NA;;5240000;NA;NA;Resident
-246;Golden-breasted Bunting;Emberiza flaviventris;NA;Savanna - Dry & Shrubland - Subtropical/Tropical Dry;;;;;;;21300000;NA;NA;Resident
-247;Godlewski's Bunting;Emberiza godlewskii;NA;Shrubland - Subtropical/Tropical High Altitude & Rocky areas (eg. inland cliffs, mountain peaks);;;;;;;12000000;NA;NA;Resident
+246;Golden-breasted Bunting;Emberiza flaviventris;NA;Savanna - Dry & Shrubland - Subtropical/Tropical Dry;Omnivorous;Ground, shrub and tree;Open;Bush;Yes;Diederik Cuckoo;21300000;NA;NA;Resident
+247;Godlewski's Bunting;Emberiza godlewskii;NA;Shrubland - Subtropical/Tropical High Altitude & Rocky areas (eg. inland cliffs, mountain peaks);Omnivorous;Ground;Open;Ground;NA;;12000000;NA;NA;Resident
 248;Little Bunting;Emberiza pusilla;NA;Forest - Boreal & Grassland - Tundra;Omnivorous;Ground and Shrub;Open;Ground;NA;;3480000;NA;NA;Migratory
-249;Grey Bunting;Emberiza variabilis;NA;Forest - Temperate & Forest - Boreal;;;;;;;772000;NA;NA;Migratory
+249;Grey Bunting;Emberiza variabilis;NA;Forest - Temperate & Forest - Boreal;Omnivorous;Ground;NA;Ground and Shrub;NA;;772000;NA;NA;Migratory
 250;Alder Flycatcher;Empidonax alnorum;NA;Wetlands (inland) - Shrub Dominated Wetlands;Insectivorous;Tree and shrub;Open;Shrub and tree;Yes;Brood parasite: Brown-headed Cowbird;6500000;1300;NA;Migratory
 251;Yellow-bellied Flycatcher;Empidonax flaviventris;NA;Forest - Temperate & Forest - Boreal & Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands;Omnivorous;Tree, shrub and ground;Open;Ground;NA;;1740000;NA;NA;Migratory
 252;Hammond's Flycatcher;Empidonax hammondii;NA;Forest - Temperate & Forest - Boreal;Insectivorous;Tree, shrub and ground;Open;Tree;Yes;Brood parasite: Brown-headed Cowbird;1690000;3000;1000;Migratory
-253;Western Stipple-throated Antwren;Epinecrophylla haematonota;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;2890000;500;NA;Resident
-254;European Robin;Erithacus rubecula;NA;Forest - Temperate & Forest - Boreal;;;;;;;23900000;2000;NA;Migratory
-255;Common Waxbill;Estrilda astrild;NA;Savanna - Dry & Grassland - Subtropical/Tropical Dry;;;;;;;22200000;1000;NA;Resident
+253;Western Stipple-throated Antwren;Epinecrophylla haematonota;NA;Forest - Subtropical/Tropical Moist Lowland;Insectivorous;Shrub and tree;Closed;Shrub;NA;N=1 for nest description;2890000;500;NA;Resident
+254;European Robin;Erithacus rubecula;NA;Forest - Temperate & Forest - Boreal;Omnivorous;Ground and shrub;Open;Ground and Shrub;No;;23900000;2000;NA;Migratory
+255;Common Waxbill;Estrilda astrild;NA;Savanna - Dry & Grassland - Subtropical/Tropical Dry;Omnivorous;Ground, shrub and tree;Closed;Ground and Shrub;Yes;Pin-tailed Whydah;22200000;1000;NA;Resident
 256;Western Koel;Eudynamys scolopaceus;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Canopy;Open;Shrub and tree;Yes;Brood parasite of Crows and Magpies;29800000;1500;NA;Migratory
-257;White-winged Widowbird;Euplectes albonotatus;NA;Grassland - Subtropical/Tropical Dry;;;;;;;12500000;NA;NA;Resident
-258;Red-collared Widowbird;Euplectes ardens;NA;Forest - Subtropical/Tropical Dry;;;;;;;15900000;NA;NA;Resident
-259;Yellow Bishop;Euplectes capensis;NA;Shrubland - Subtropical/Tropical Dry & Grassland - Subtropical/Tropical Dry;;;;;;;13800000;NA;NA;Resident
-260;Marsh Widowbird;Euplectes hartlaubi;NA;Grassland - Subtropical/Tropical Seasonally Wet/Flooded & Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands;;;;;;;5090000;NA;NA;Resident
-261;Black-winged Bishop;Euplectes hordeaceus;NA;Grassland - Subtropical/Tropical Dry;;;;;;;17800000;NA;NA;Resident
-262;Brown-throated Parakeet;Eupsittula pertinax;Aratinga pertinax;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland & Shrubland - Subtropical/Tropical Dry;;;;;;;NA;NA;NA;NA
-263;Yellow-whiskered greenbul;Eurillas latirostris;Andropadus latirostris;Forest - Subtropical/Tropical Moist Lowland;;;;;;;NA;NA;NA;NA
-264;Little greenbul;Eurillas virens;Andropadus virens;Forest - Subtropical/Tropical Moist Lowland & Forest - Subtropical/Tropical Dry;;;;;;;NA;NA;NA;NA
-265;Broad-billed Roller;Eurystomus glaucurus;NA;Forest - Subtropical/Tropical Dry;;;;;;;19900000;NA;NA;Migratory
-266;Eleonora's Falcon;Falco eleonorae;NA;Rocky areas (eg. inland cliffs, mountain peaks);;;;;;;1880000;NA;NA;NA
-267;American Kestrel;Falco sparverius;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;;;;;;;52700000;4300;NA;Migratory
-268;Collared Flycatcher;Ficedula albicollis;NA;Forest - Temperate;;;;;;;1250000;NA;NA;Migratory
-269;European Pied Flycatcher;Ficedula hypoleuca;NA;Forest - Temperate;;;;;;;5580000;NA;NA;Migratory
-270;Red-breasted Flycatcher;Ficedula parva;NA;Forest - Temperate;;;;;;;2630000;2350;NA;Migratory
-271;Semi-collared Flycatcher;Ficedula semitorquata;NA;Forest - Temperate;;;;;;;1100000;2000;NA;Migratory
-272;Ashy Flycatcher;Fraseria caerulescens;Muscicapa caerulescens;Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry & Shrubland - Subtropical/Tropical Dry;;;;;;;NA;NA;NA;NA
-273;White-browed Forest-flycatcher;Fraseria cinerascens;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;6330000;NA;NA;Resident
-274;Common Chaffinch;Fringilla coelebs;NA;Forest - Temperate;;;;;;;28200000;NA;NA;Migratory
-275;Brambling;Fringilla montifringilla;NA;Forest - Temperate & Forest - Boreal;;;;;;;20900000;NA;NA;Migratory
-276;Blue-necked Jacamar;Galbula cyanicollis;NA;Forest - Subtropical/Tropical Moist Lowland & Forest - Subtropical/Tropical Swamp;;;;;;;3350000;900;NA;Resident
-277;Common Moorhen;Gallinula chloropus;NA;Wetlands (inland) - Permanent Freshwater Lakes (over 8ha) & Wetlands (inland) - Permanent Freshwater Marshes/Pools (under 8ha);;;;;;;121000000;4000;NA;Migratory
-278;Eurasian Jay;Garrulus glandarius;NA;Forest - Temperate;;;;;;;43100000;NA;NA;Resident
-279;Common Loon;Gavia immer;NA;Wetlands (inland) - Tundra Wetlands (incl. pools and temporary waters from snowmelt) & Wetlands (inland) - Permanent Freshwater Lakes (over 8ha);;;;;;;27200000;500;NA;Migratory
-280;Black-eared Ground-thrush ;Geokichla camaronensis;Zoothera camaronensis;Forest - Subtropical/Tropical Moist Lowland;;;;;;;NA;NA;NA;NA
-281;Orange Ground-thrush;Geokichla gurneyi;Zoothera gurneyi;Forest - Subtropical/Tropical Moist Montane;;;;;;;NA;NA;NA;NA
-282;MacGillivray's warbler;Geothlypis tolmiei;Oporornis tolmiei;Forest - Temperate & Shrubland - Subtropical/Tropical Moist;;;;;;;NA;NA;NA;NA
-283;Common Yellowthroat;Geothlypis trichas;NA;Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands;;;;;;;12200000;2800;NA;Migratory
-284;Chopi Blackbird;Gnorimopsar chopi;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;8400000;1000;NA;Resident
-285;Asian Pied Starling;Gracupica contra;Sturnus contra;Savanna - Dry & Grassland - Subtropical/Tropical Dry;;;;;;;NA;NA;NA;NA
-286;Striated laughingthrush;Grammatoptila striata;Garrulax striatus;Forest - Subtropical/Tropical Moist Montane;;;;;;;NA;NA;NA;NA
-287;Sahel bush sparrow;Gymnoris dentata;Petronia dentata;Savanna - Dry & Shrubland - Subtropical/Tropical Dry & Grassland - Subtropical/Tropical Dry & Desert - Hot;;;;;;;NA;NA;NA;NA
-288;Yellow-throated Bush-sparrow;Gymnoris superciliaris;NA;Savanna - Dry;;;;;;;7150000;NA;NA;Resident
-289;Griffon Vulture;Gyps fulvus;NA;Rocky areas (eg. inland cliffs, mountain peaks);;;;;;;20400000;3000;0;Migratory
-290;House finch;Haemorhous mexicanus;Carpodacus mexicanus;Shrubland - Subtropical/Tropical Dry;;;;;;;NA;NA;NA;NA
-291;Woodland Kingfisher;Halcyon senegalensis;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;;;;;;;8550000;1500;NA;Migratory
-292;Collared Sunbird;Hedydipna collaris;NA;Forest - Subtropical/Tropical Dry;;;;;;;19700000;NA;NA;Resident
-293;Icterine Warbler;Hippolais icterina;NA;Forest - Temperate & Forest - Boreal;;;;;;;6350000;NA;NA;Migratory
-294;Melodious Warbler;Hippolais polyglotta;NA;Forest - Temperate & Forest - Subtropical/Tropical Moist Lowland & Shrubland - Temperate;;;;;;;2750000;NA;NA;Migratory
-295;Angola Swallow;Hirundo angolensis;NA;Savanna - Dry & Forest - Subtropical/Tropical Moist Lowland & Artificial/Terrestrial - Urban Areas;;;;;;;4940000;2600;NA;Migratory
-296;Barn Swallow;Hirundo rustica;NA;Artificial/Terrestrial - Urban Areas & Artificial/Terrestrial - Pastureland;;;;;;;193000000;3000;NA;Migratory
-297;Green Hylia;Hylia prasina;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;7890000;NA;NA;Resident
-298;Red-throated Twinspot;Hypargos niveoguttatus;NA;Savanna - Dry & Shrubland - Subtropical/Tropical Moist & Shrubland - Subtropical/Tropical Moist;;;;;;;4070000;NA;NA;Resident
-299;Spix's Antwarbler;Hypocnemis striata;NA;Forest - Subtropical/Tropical Moist Lowland & Forest - Subtropical/Tropical Swamp;;;;;;;1410000;NA;NA;Resident
-300;Band-tailed Antbird;Hypocnemoides maculicauda;NA;Forest - Subtropical/Tropical Moist Lowland & Forest - Subtropical/Tropical Swamp;;;;;;;4560000;500;NA;Resident
-301;Black-naped Monarch;Hypothymis azurea;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;19800000;NA;NA;Migratory
-302;Madagascar Bulbul;Hypsipetes madagascariensis;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;;;;;;;1030000;NA;NA;Resident
-303;Yellow Oriole;Icterus nigrogularis;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Mangrove Vegetation Above High Tide Level & Savanna - Dry;;;;;;;2690000;NA;NA;Resident
-304;African Yellow Warbler;Iduna natalensis;Chloropeta natalensis;Shrubland - Subtropical/Tropical Moist;;;;;;;NA;NA;NA;NA
-305;Olivaceous Warbler;Iduna pallida;NA;Shrubland - Mediterranean-type Shrubby Vegetation;;;;;;;18700000;2400;NA;Migratory
-306;Mountain illadopsis;Illadopsis pyrrhoptera;NA;Forest - Subtropical/Tropical Moist Montane;;;;;;;NA;NA;NA;NA
-307;Pale-breasted Illadopsis;Illadopsis rufipennis;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;5550000;2300;500;Resident
-308;Greater Honeyguide;Indicator indicator;NA;Savanna - Dry;;;;;;;24600000;2000;NA;Resident
-309;Scaly-throated Honeyguide;Indicator variegatus;NA;Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry;;;;;;;9400000;2200;NA;Resident
-310;African dwarf kingfisher;Ispidina lecontei;Ceyx lecontei;Forest - Subtropical/Tropical Moist Lowland;;;;;;;NA;NA;NA;NA
-311;African Pygmy-kingfisher;Ispidina picta;Ceyx pictus;Forest - Subtropical/Tropical Moist Lowland & Forest - Subtropical/Tropical Swamp;;;;;;;NA;NA;NA;NA
-312;Common Little Bittern;Ixobrychus minutus;NA;Forest - Subtropical/Tropical Mangrove Vegetation Above High Tide Level & Wetlands (inland) - Permanent Inland Deltas & Wetlands (inland) - Permanent Freshwater Lakes (over 8ha);;;;;;;33500000;1800;NA;Migratory
-313;Varied Thrush;Ixoreus naevius;NA;Forest - Temperate & Forest - Boreal;;;;;;;4540000;NA;NA;Migratory
+257;White-winged Widowbird;Euplectes albonotatus;NA;Grassland - Subtropical/Tropical Dry;Omnivorous;Ground;Closed;Shrub;Yes;Diederik Cuckoo;12500000;NA;NA;Resident
+258;Red-collared Widowbird;Euplectes ardens;NA;Forest - Subtropical/Tropical Dry;Omnivorous;Ground;Closed;Shrub;Yes;Diederik Cuckoo;15900000;NA;NA;Resident
+259;Yellow Bishop;Euplectes capensis;NA;Shrubland - Subtropical/Tropical Dry & Grassland - Subtropical/Tropical Dry;Omnivorous;Ground;Closed;Shrub;No;;13800000;NA;NA;Resident
+260;Marsh Widowbird;Euplectes hartlaubi;NA;Grassland - Subtropical/Tropical Seasonally Wet/Flooded & Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands;Omnivorous;NA;Closed;Shrub;NA;;5090000;NA;NA;Resident
+261;Black-winged Bishop;Euplectes hordeaceus;NA;Grassland - Subtropical/Tropical Dry;Omnivorous;Ground and Shrub;Closed;Shrub;Yes;Diederik Cuckoo;17800000;NA;NA;Resident
+262;Brown-throated Parakeet;Eupsittula pertinax;Aratinga pertinax;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland & Shrubland - Subtropical/Tropical Dry;Herbivorous;NA;Cavity;Ground and tree;NA;;NA;NA;NA;NA
+263;Yellow-whiskered greenbul;Eurillas latirostris;Andropadus latirostris;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Shrub and tree;Open;Shrub;No;;NA;NA;NA;NA
+264;Little greenbul;Eurillas virens;Andropadus virens;Forest - Subtropical/Tropical Moist Lowland & Forest - Subtropical/Tropical Dry;Omnivorous;Ground, shrub and tree;Open;Shrub;No;;NA;NA;NA;NA
+265;Broad-billed Roller;Eurystomus glaucurus;NA;Forest - Subtropical/Tropical Dry;Insectivorous;Ground, shrub and tree;Cavity;Tree;No;;19900000;NA;NA;Migratory
+266;Eleonora's Falcon;Falco eleonorae;NA;Rocky areas (eg. inland cliffs, mountain peaks);Omnivorous;Air;Open;Ground;No;;1880000;NA;NA;NA
+267;American Kestrel;Falco sparverius;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;Omnivorous;Ground;Cavity;Tree;No;;52700000;4300;NA;Migratory
+268;Collared Flycatcher;Ficedula albicollis;NA;Forest - Temperate;Omnivorous;Ground, shrub and tree;Cavity;Shrub and tree;No;;1250000;NA;NA;Migratory
+269;European Pied Flycatcher;Ficedula hypoleuca;NA;Forest - Temperate;Insectivorous;Ground, shrub and tree;Cavity;Tree;No;;5580000;NA;NA;Migratory
+270;Red-breasted Flycatcher;Ficedula parva;NA;Forest - Temperate;Insectivorous;Ground, shrub and tree;Cavity;Shrub and tree;No;;2630000;2350;NA;Migratory
+271;Semi-collared Flycatcher;Ficedula semitorquata;NA;Forest - Temperate;Insectivorous;Ground, shrub and tree;Cavity;Tree;No;;1100000;2000;NA;Migratory
+272;Ashy Flycatcher;Fraseria caerulescens;Muscicapa caerulescens;Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry & Shrubland - Subtropical/Tropical Dry;Insectivorous;Tree;Cavity;Tree;Yes;Klaas' Cuckoo;NA;NA;NA;NA
+273;White-browed Forest-flycatcher;Fraseria cinerascens;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground, shrub and tree;Cavity;Shrub;No;;6330000;NA;NA;Resident
+274;Common Chaffinch;Fringilla coelebs;NA;Forest - Temperate;Omnivorous;Ground, shrub and tree;Open;Shrub and tree;No;;28200000;NA;NA;Migratory
+275;Brambling;Fringilla montifringilla;NA;Forest - Temperate & Forest - Boreal;Omnivorous;Ground, shrub and tree;Open;Shrub and tree;Yes;Common cuckoo;20900000;NA;NA;Migratory
+276;Blue-necked Jacamar;Galbula cyanicollis;NA;Forest - Subtropical/Tropical Moist Lowland & Forest - Subtropical/Tropical Swamp;Insectivorous;Air;Cavity;Shrub;NA;;3350000;900;NA;Resident
+277;Common Moorhen;Gallinula chloropus;NA;Wetlands (inland) - Permanent Freshwater Lakes (over 8ha) & Wetlands (inland) - Permanent Freshwater Marshes/Pools (under 8ha);Omnivorous;Water/Ground;Open;Ground;No;;121000000;4000;NA;Migratory
+278;Eurasian Jay;Garrulus glandarius;NA;Forest - Temperate;Omnivorous;Ground, shrub and tree;Open;Tree;No;;43100000;NA;NA;Resident
+279;Common Loon;Gavia immer;NA;Wetlands (inland) - Tundra Wetlands (incl. pools and temporary waters from snowmelt) & Wetlands (inland) - Permanent Freshwater Lakes (over 8ha);Piscivore;Water;Open;Ground;No;;27200000;500;NA;Migratory
+280;Black-eared Ground-thrush ;Geokichla camaronensis;Zoothera camaronensis;Forest - Subtropical/Tropical Moist Lowland;Insectivorous;Ground;Open;Shrub;NA;;NA;NA;NA;NA
+281;Orange Ground-thrush;Geokichla gurneyi;Zoothera gurneyi;Forest - Subtropical/Tropical Moist Montane;Omnivorous;Ground;Open;Shrub;NA;;NA;NA;NA;NA
+282;MacGillivray's warbler;Geothlypis tolmiei;Oporornis tolmiei;Forest - Temperate & Shrubland - Subtropical/Tropical Moist;Insectivorous;Ground and Shrub;Open;Shrub;Yes;Brown-headed cowbird;NA;NA;NA;NA
+283;Common Yellowthroat;Geothlypis trichas;NA;Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands;Insectivorous;Ground and Shrub;Open;Ground and Shrub;Yes;Brown-headed cowbird;12200000;2800;NA;Migratory
+284;Chopi Blackbird;Gnorimopsar chopi;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground;Cavity;NA;Yes;Molothrus rufoaxillaris, bonariensis ;8400000;1000;NA;Resident
+285;Asian Pied Starling;Gracupica contra;Sturnus contra;Savanna - Dry & Grassland - Subtropical/Tropical Dry;Omnivorous;Ground;Closed;Tree;No;;NA;NA;NA;NA
+286;Striated laughingthrush;Grammatoptila striata;Garrulax striatus;Forest - Subtropical/Tropical Moist Montane;Insectivorous;Tree;Open;Shrub and tree;NA;;NA;NA;NA;NA
+287;Sahel bush sparrow;Gymnoris dentata;Petronia dentata;Savanna - Dry & Shrubland - Subtropical/Tropical Dry & Grassland - Subtropical/Tropical Dry & Desert - Hot;Omnivorous;Ground, shrub and tree;Cavity;Tree;NA;;NA;NA;NA;NA
+288;Yellow-throated Bush-sparrow;Gymnoris superciliaris;NA;Savanna - Dry;Omnivorous;Ground and tree;Cavity;Tree;NA;;7150000;NA;NA;Resident
+289;Griffon Vulture;Gyps fulvus;NA;Rocky areas (eg. inland cliffs, mountain peaks);Carnivore;Ground;Open;Ground;No;;20400000;3000;0;Migratory
+290;House finch;Haemorhous mexicanus;Carpodacus mexicanus;Shrubland - Subtropical/Tropical Dry;Omnivorous;Ground, shrub and tree;Open;Shrub and tree;Yes ;Brown-headed cowbird;NA;NA;NA;NA
+291;Woodland Kingfisher;Halcyon senegalensis;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground;Cavity;Shrub and tree;No;;8550000;1500;NA;Migratory
+292;Collared Sunbird;Hedydipna collaris;NA;Forest - Subtropical/Tropical Dry;Omnivorous;Shrub and tree;Closed;Shrub and tree;Yes;Klaas' Cuckoo;19700000;NA;NA;Resident
+293;Icterine Warbler;Hippolais icterina;NA;Forest - Temperate & Forest - Boreal;Omnivorous;Ground, shrub and tree;Open;Shrub and tree;NA;;6350000;NA;NA;Migratory
+294;Melodious Warbler;Hippolais polyglotta;NA;Forest - Temperate & Forest - Subtropical/Tropical Moist Lowland & Shrubland - Temperate;Omnivorous;Shrub and tree;Open;Shrub and tree;NA;;2750000;NA;NA;Migratory
+295;Angola Swallow;Hirundo angolensis;NA;Savanna - Dry & Forest - Subtropical/Tropical Moist Lowland & Artificial/Terrestrial - Urban Areas;Insectivorous;Air;Open;Shrub and tree;No;;4940000;2600;NA;Migratory
+296;Barn Swallow;Hirundo rustica;NA;Artificial/Terrestrial - Urban Areas & Artificial/Terrestrial - Pastureland;Insectivorous;Air;Open;Buildings;No;;193000000;3000;NA;Migratory
+297;Green Hylia;Hylia prasina;NA;Forest - Subtropical/Tropical Moist Lowland;Insectivorous;Ground and Shrub;Closed;Shrub;NA;;7890000;NA;NA;Resident
+298;Red-throated Twinspot;Hypargos niveoguttatus;NA;Savanna - Dry & Shrubland - Subtropical/Tropical Moist & Shrubland - Subtropical/Tropical Moist;Omnivorous;Ground;Closed;Ground and Shrub;Yes;Green Indigobird;4070000;NA;NA;Resident
+299;Spix's Antwarbler;Hypocnemis striata;NA;Forest - Subtropical/Tropical Moist Lowland & Forest - Subtropical/Tropical Swamp;Insectivorous;NA;NA;NA;NA;;1410000;NA;NA;Resident
+300;Band-tailed Antbird;Hypocnemoides maculicauda;NA;Forest - Subtropical/Tropical Moist Lowland & Forest - Subtropical/Tropical Swamp;Insectivorous;Water;Closed;Shrub;NA;;4560000;500;NA;Resident
+301;Black-naped Monarch;Hypothymis azurea;NA;Forest - Subtropical/Tropical Moist Lowland;Insectivorous;Ground, shrub and tree;Open;Shrub and tree;No;;19800000;NA;NA;Migratory
+302;Madagascar Bulbul;Hypsipetes madagascariensis;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground, shrub and tree;Open;Shrub and tree;NA;;1030000;NA;NA;Resident
+303;Yellow Oriole;Icterus nigrogularis;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Mangrove Vegetation Above High Tide Level & Savanna - Dry;Omnivorous;NA;Closed;Shrub and tree;Yes;Molothrus bonariensis;2690000;NA;NA;Resident
+304;African Yellow Warbler;Iduna natalensis;Chloropeta natalensis;Shrubland - Subtropical/Tropical Moist;Insectivorous;Shrub;Open;Shrub;NA;;NA;NA;NA;NA
+305;Olivaceous Warbler;Iduna pallida;NA;Shrubland - Mediterranean-type Shrubby Vegetation;Insectivorous;Ground and Tree;Open;Shrub and tree;NA;;18700000;2400;NA;Migratory
+306;Mountain illadopsis;Illadopsis pyrrhoptera;NA;Forest - Subtropical/Tropical Moist Montane;Omnivorous;Ground and Shrub;Open;Shrub;NA;N nest =1;NA;NA;NA;NA
+307;Pale-breasted Illadopsis;Illadopsis rufipennis;NA;Forest - Subtropical/Tropical Moist Lowland;Insectivorous;Ground, shrub and tree;Open;Shrub;Yes;Olive Long-tailed Cuckoo;5550000;2300;500;Resident
+308;Greater Honeyguide;Indicator indicator;NA;Savanna - Dry;Omnivorous;NA;NA;NA;Yes;Parasatize at least 38 species;24600000;2000;NA;Resident
+309;Scaly-throated Honeyguide;Indicator variegatus;NA;Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry;Omnivorous;NA;NA;NA;Yes;Parasatize at least 7 species;9400000;2200;NA;Resident
+310;African dwarf kingfisher;Ispidina lecontei;Ceyx lecontei;Forest - Subtropical/Tropical Moist Lowland;Insectivorous;Ground;Cavity;Ground;NA;;NA;NA;NA;NA
+311;African Pygmy-kingfisher;Ispidina picta;Ceyx pictus;Forest - Subtropical/Tropical Moist Lowland & Forest - Subtropical/Tropical Swamp;Insectivorous;Water / Ground / Air;Cavity;Ground;NA;;NA;NA;NA;NA
+312;Common Little Bittern;Ixobrychus minutus;NA;Forest - Subtropical/Tropical Mangrove Vegetation Above High Tide Level & Wetlands (inland) - Permanent Inland Deltas & Wetlands (inland) - Permanent Freshwater Lakes (over 8ha);Omnivorous;Ground;Open;Shrub;No;;33500000;1800;NA;Migratory
+313;Varied Thrush;Ixoreus naevius;NA;Forest - Temperate & Forest - Boreal;Omnivorous;Ground;Open;Ground, shrub and tree;No;;4540000;NA;NA;Migratory
 314;Dark-eyed Junco;Junco hyemalis;NA;Forest - Temperate & Forest - Boreal;Omnivorous;Tree, shrub and ground;Cavity;Ground;Yes;Brood parasite: Brown-headed Cowbird;17900000;3000;2600;Migratory
-315;White-rumped Shama;Kittacincla malabarica;Copsychus malabaricus;Forest - Subtropical/Tropical Moist Lowland;;;;;;;NA;NA;NA;NA
-316;African Firefinch;Lagonosticta rubricata;NA;Forest - Subtropical/Tropical Moist Montane & Savanna - Dry;;;;;;;21700000;1800;NA;Resident
-317;Greater Blue-eared Starling;Lamprotornis chalybaeus;NA;Savanna - Dry;;;;;;;22100000;NA;NA;Resident
-318;Southern Boubou;Laniarius ferrugineus;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;;;;;;;1490000;NA;NA;Resident
-319;Fuelleborn's Boubou;Laniarius fuelleborni;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;184000;2800;1170;Resident
-320;Red-backed Shrike;Lanius collurio;NA;Artificial/Terrestrial - Pastureland & Shrubland - Temperate;;;;;;;15700000;3200;NA;Migratory
-321;European Herring Gull;Larus argentatus;NA;Marine Intertidal - Rocky Shoreline & Marine Intertidal - Sandy Shoreline and/or Beaches, Sand Bars, Spits, Etc;;;;;;;7180000;2000;NA;Resident
-322;Caspian Gull;Larus cachinnans;NA;Marine Intertidal - Sandy Shoreline and/or Beaches, Sand Bars, Spits, Etc & Marine Coastal/Supratidal - Sea Cliffs and Rocky Offshore Islands;;;;;;;5820000;NA;NA;Migratory
-323;Caspian Gull subspecies;Larus cachinnans mongolicus;unclear classification;Marine Intertidal - Sandy Shoreline and/or Beaches, Sand Bars, Spits, Etc & Marine Coastal/Supratidal - Sea Cliffs and Rocky Offshore Islands;;;;;;;NA;NA;NA;NA
-324;Japanese Robin ;Larvivora akahige;Erithacus akahige;Forest - Temperate;;;;;;;NA;NA;NA;NA
-325;Orange-crowned Warbler;Leiothlypis celata;Vermivora celata;Forest - Subtropical/Tropical Moist Lowland & Shrubland - Subarctic ;;;;;;;NA;NA;NA;NA
-326;Tennessee Warbler;Leiothlypis peregrina;NA;Forest - Temperate & Shrubland - Temperate;;;;;;;6110000;NA;NA;Migratory
+315;White-rumped Shama;Kittacincla malabarica;Copsychus malabaricus;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground and Shrub;Cavity;Shrub and tree;Yes;Probably some hawk cuckoos (Hierococcyx);NA;NA;NA;NA
+316;African Firefinch;Lagonosticta rubricata;NA;Forest - Subtropical/Tropical Moist Montane & Savanna - Dry;Omnivorous;Ground;Closed;Shrub;Yes;Dusky Indigobird and Cameroon Indigobird;21700000;1800;NA;Resident
+317;Greater Blue-eared Starling;Lamprotornis chalybaeus;NA;Savanna - Dry;Omnivorous;Ground, shrub and tree;Cavity;Shrub and tree;Yes;Great spotted cuckoo;22100000;NA;NA;Resident
+318;Southern Boubou;Laniarius ferrugineus;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground, shrub and tree;Open;Shrub and tree;Yes;Black and Jacobin cuckoo;1490000;NA;NA;Resident
+319;Fuelleborn's Boubou;Laniarius fuelleborni;NA;Forest - Subtropical/Tropical Moist Lowland;Insectivorous;Shrub and tree;Open;Shrub;NA;;184000;2800;1170;Resident
+320;Red-backed Shrike;Lanius collurio;NA;Artificial/Terrestrial - Pastureland & Shrubland - Temperate;Omnivorous;Ground and Shrub;Open;Shrub;No;;15700000;3200;NA;Migratory
+321;European Herring Gull;Larus argentatus;NA;Marine Intertidal - Rocky Shoreline & Marine Intertidal - Sandy Shoreline and/or Beaches, Sand Bars, Spits, Etc;Omnivorous;Ground and water;Open;Ground;No;;7180000;2000;NA;Resident
+322;Caspian Gull;Larus cachinnans;NA;Marine Intertidal - Sandy Shoreline and/or Beaches, Sand Bars, Spits, Etc & Marine Coastal/Supratidal - Sea Cliffs and Rocky Offshore Islands;Omnivorous;Ground and water;Open;Ground and Shrub;No;;5820000;NA;NA;Migratory
+323;Herring Gull subspecies;Larus smithsonianus mongolicus;unclear classification;Marine Intertidal - Sandy Shoreline and/or Beaches, Sand Bars, Spits, Etc & Marine Coastal/Supratidal - Sea Cliffs and Rocky Offshore Islands;Omnivorous;Ground and water;Open;Ground and Shrub;No;;NA;NA;NA;NA
+324;Japanese Robin ;Larvivora akahige;Erithacus akahige;Forest - Temperate;NA;Ground and Shrub;Open;Ground;NA;;NA;NA;NA;NA
+325;Orange-crowned Warbler;Leiothlypis celata;Vermivora celata;Forest - Subtropical/Tropical Moist Lowland & Shrubland - Subarctic ;Insectivorous;Shrub and tree;Open;Ground;Yes;Brown-headed cowbird;NA;NA;NA;NA
+326;Tennessee Warbler;Leiothlypis peregrina;NA;Forest - Temperate & Shrubland - Temperate;Omnivorous;Tree;Open;Ground;Yes;Brown-headed cowbird;6110000;NA;NA;Migratory
 327;Purple-throated Sunbird;Leptocoma sperata;Nectarinia;Forest - Subtropical/Tropical Moist Lowland & Forest - Subtropical/Tropical Mangrove Vegetation Above High Tide Level;NA;NA;Open;Shrub;NA;Very few things known about this species;NA;NA;NA;NA
-328;Bar-tailed Godwit;Limosa lapponica;NA;Wetlands (inland) - Tundra Wetlands (incl. pools and temporary waters from snowmelt) ;;;;;;;9050000;440;NA;Migratory
-329;Scaly-breasted Munia;Lonchura punctulata;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;;;;;;;23000000;NA;NA;Resident
-330;African grey hornbill;Lophoceros nasutus;Tockus nasutus;Forest - Subtropical/Tropical Dry & Savanna - Dry;;;;;;;NA;NA;NA;NA
-331;Crested Tit;Lophophanes cristatus;NA;Forest - Temperate;;;;;;;11600000;2300;NA;Resident
-332;Red Crossbill;Loxia curvirostra;NA;Forest - Temperate;;;;;;;129000000;4100;800;Resident
+328;Bar-tailed Godwit;Limosa lapponica;NA;Wetlands (inland) - Tundra Wetlands (incl. pools and temporary waters from snowmelt) ;Arthropods;Ground;Open;Ground;No;;9050000;440;NA;Migratory
+329;Scaly-breasted Munia;Lonchura punctulata;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground, shrub and tree;Closed;Shrub and tree;No;;23000000;NA;NA;Resident
+330;African grey hornbill;Lophoceros nasutus;Tockus nasutus;Forest - Subtropical/Tropical Dry & Savanna - Dry;Omnivorous;Ground, shrub and tree;Cavity;Shrub and tree;No;;NA;NA;NA;NA
+331;Crested Tit;Lophophanes cristatus;NA;Forest - Temperate;Insectivorous;Shrub and tree;Cavity;Shrub and tree;No;;11600000;2300;NA;Resident
+332;Red Crossbill;Loxia curvirostra;NA;Forest - Temperate;Granivore;Ground, shrub and tree;Open;Shrub and tree;No;;129000000;4100;800;Resident
 333;Two-barred Crossbill;Loxia leucoptera;NA;Forest - Temperate & Forest - Boreal;Omnivorous;Tree, shrub and ground;Open;Tree;NA;Migratory and resident populations;47700000;NA;NA;Resident
-334;Lesser Antillean Bullfinch;Loxigilla noctis;NA;Forest - Subtropical/Tropical Moist Lowland & Shrubland - Subtropical/Tropical Moist;;;;;;;167000;900;NA;Resident
-335;Bluethroat;Luscinia svecica;NA;Wetlands (inland) - Seasonal/Intermittent Freshwater Marshes/Pools (under 8ha) & Marine Intertidal - Salt Marshes (Emergent Grasses);;;;;;;NA;NA;NA;NA
-336;Black-collared Barbet;Lybius torquatus;NA;Savanna - Dry & Grassland - Subtropical/Tropical Dry & Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls);;;;;;;7120000;1820;NA;Resident
-337;Black Grouse;Lyrurus tetrix;Tetrao tetrix;Forest - Temperate & Forest - Boreal;;;;;;;NA;NA;NA;NA
-338;Grey-headed Bush-shrike;Malaconotus blanchoti;NA;Savanna - Dry;;;;;;;23000000;NA;NA;Resident
-339;Falcated Duck;Mareca falcata;Anas falcata;Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands;;;;;;;NA;NA;NA;NA
-340;Tropical Screech-owl;Megascops choliba;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;17400000;2800;NA;Resident
-341;Western Screech-owl;Megascops kennicottii;NA;Forest - Temperate & Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;;;;;;;7020000;2200;NA;Migratory
-342;Pearly Antshrike;Megastictus margaritatus;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;;;;;;;3410000;1250;NA;Resident
-343;Miombo Tit;Melaniparus griseiventris;NA;Savanna - Dry;;;;;;;2990000;1950;915;Resident
-344;Southern Black Tit;Melaniparus niger;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;;;;;;;3810000;1070;NA;Resident
-345;Rufous-bellied Tit;Melaniparus rufiventris;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;;;;;;;3340000;2000;600;Resident
-346;Lewin's Honeyeater;Meliphaga lewinii;NA;Forest - Temperate & Forest - Subtropical/Tropical Moist Lowland;;;;;;;1870000;NA;NA;Resident
-347;Budgerigar;Melopsittacus undulatus;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;;;;;;;7160000;NA;NA;Resident
-348;Lincoln's Sparrow;Melospiza lincolnii;NA;Shrubland - Boreal & Shrubland - Temperate & Grassland - Temperate;Omnivorous;Ground and Shrub;Open;Ground and Shrub;Yes;Brood parasite: Brown-headed Cowbird;8130000;NA;NA;Migratory
-349;Song Sparrow;Melospiza melodia;NA;Marine Intertidal - Sandy Shoreline and/or Beaches, Sand Bars, Spits, Etc & Marine Intertidal - Salt Marshes (Emergent Grasses);;;;;;;24000000;2800;NA;Migratory
-350;European Bee-eater;Merops apiaster;NA;Forest - Temperate & Shrubland - Temperate;;;;;;;12800000;2400;NA;Migratory
-351;Rosy Bee-eater;Merops malimbicus;NA;Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry;;;;;;;2610000;NA;NA;Migratory
-352;Little Bee-eater;Merops pusillus;NA;Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry;;;;;;;22000000;NA;NA;Resident
-353;Brown-eared Bulbul ;Microscelis amaurotis;Hypsipetes;Forest - Subtropical/Tropical Moist Lowland;;;;;;;NA;NA;NA;NA
-354;Black Kite;Milvus migrans;NA;Forest - Temperate & Savanna - Dry & Desert - Hot;;;;;;;159000000;4900;0;Migratory
-355;Flappet Lark;Mirafra rufocinnamomea;NA;Savanna - Dry & Shrubland - Subtropical/Tropical Dry;;;;;;;18800000;NA;NA;Resident
-356;Brown-headed Cowbird;Molothrus ater;NA;Forest - Temperate;;;;;;;15500000;2000;NA;Migratory
-357;African Dusky Flycatcher;Muscicapa adusta;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;;;;;;;13700000;3400;NA;Resident
-358;Spotted Flycatcher;Muscicapa striata;NA;Forest - Temperate & Shrubland - Temperate;;;;;;;19500000;2200;NA;Migratory
-359;Short-crested Flycatcher;Myiarchus ferox;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;13600000;1000;NA;Resident
-360;Russet-crowned Warbler;Myiothlypis coronata;NA;Forest - Subtropical/Tropical Moist Montane;;;;;;;NA;NA;NA;Resident
-361;Flavescent warbler;Myiothlypis flaveola;Basileuterus flaveolus;Forest - Subtropical/Tropical Dry;;;;;;;NA;NA;NA;NA
-362;Buff-rumped Warbler;Myiothlypis leucophrys;Basileuterus fulvicauda;Forest - Subtropical/Tropical Moist Lowland & Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls);;;;;;;NA;NA;NA;NA
-363;Arnot's Chat;Myrmecocichla arnotti;NA;Savanna - Dry;;;;;;;4550000;1750;NA;Resident
-364;Bronze Sunbird;Nectarinia kilimensis;NA;Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry;;;;;;;4160000;2350;1000;Resident
-365;Babbling Starling;Neocichla gutturalis;NA;Savanna - Dry;;;;;;;1660000;NA;NA;Resident
-366;White-tailed Ant-thrush;Neocossyphus poensis;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;6240000;1500;NA;Resident
-367;Brown Boobook;Ninox scutulata;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;15300000;1500;NA;Resident
-368;Helmeted Guineafowl;Numida meleagris;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry & Grassland - Temperate & Desert - Hot;;;;;;;24500000;3000;NA;Resident
-369;White-throated antbird;Oneillornis salvini;Gymnopithys salvini;Forest - Subtropical/Tropical Moist Lowland;;;;;;;NA;NA;NA;NA
-370;Slender-billed Starling;Onychognathus tenuirostris;NA;Forest - Subtropical/Tropical Moist Montane & Rocky areas (eg. inland cliffs, mountain peaks);;;;;;;2850000;4250;1200;Resident
-371;African Golden Oriole;Oriolus auratus;NA;Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry;;;;;;;14300000;1850;NA;Migratory
-372;Western Black-headed Oriole;Oriolus brachyrhynchus;NA;NA;;;;;;;NA;NA;NA;NA
+334;Lesser Antillean Bullfinch;Loxigilla noctis;NA;Forest - Subtropical/Tropical Moist Lowland & Shrubland - Subtropical/Tropical Moist;Omnivorous;Shrub and tree;Closed;Shrub;NA;;167000;900;NA;Resident
+335;Bluethroat;Cyanecula svecica;Luscinia;Wetlands (inland) - Seasonal/Intermittent Freshwater Marshes/Pools (under 8ha) & Marine Intertidal - Salt Marshes (Emergent Grasses);Insectivorous;Ground and Shrub;Open;Shrub;No;;NA;NA;NA;NA
+336;Black-collared Barbet;Lybius torquatus;NA;Savanna - Dry & Grassland - Subtropical/Tropical Dry & Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls);Omnivorous;Shrub and tree;Cavity;Shrub and tree;Yes;Lesser Honeyguide;7120000;1820;NA;Resident
+337;Black Grouse;Lyrurus tetrix;Tetrao tetrix;Forest - Temperate & Forest - Boreal;Omnivorous;Ground and Shrub;Open;Ground, shrub and tree;No;;NA;NA;NA;NA
+338;Grey-headed Bush-shrike;Malaconotus blanchoti;NA;Savanna - Dry;Omnivorous;Ground, shrub and tree;Open;Shrub and tree;No;;23000000;NA;NA;Resident
+339;Falcated Duck;Mareca falcata;Anas falcata;Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands;Herbivorous;Water and ground;Open;Ground;No;;NA;NA;NA;NA
+340;Tropical Screech-owl;Megascops choliba;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground;Cavity;Tree;No;;17400000;2800;NA;Resident
+341;Western Screech-owl;Megascops kennicottii;NA;Forest - Temperate & Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground;Cavity;Tree;No;;7020000;2200;NA;Migratory
+342;Pearly Antshrike;Megastictus margaritatus;NA;Forest - Subtropical/Tropical Dry & Forest - Subtropical/Tropical Moist Lowland;Insectivorous;Shrub and tree;Open;Shrub;NA;N nest =1;3410000;1250;NA;Resident
+343;Miombo Tit;Melaniparus griseiventris;NA;Savanna - Dry;Insectivorous;Tree;Cavity;Ground and tree;Yes;Lesser Honeyguide;2990000;1950;915;Resident
+344;Southern Black Tit;Melaniparus niger;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;Omnivorous;Tree;Cavity;Shrub and tree;Yes;Greater Honeyguide;3810000;1070;NA;Resident
+345;Rufous-bellied Tit;Melaniparus rufiventris;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;Insectivorous;Tree;Cavity;Shrub and tree;NA;;3340000;2000;600;Resident
+346;Lewin's Honeyeater;Meliphaga lewinii;NA;Forest - Temperate & Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground, shrub and tree;Open;Shrub and tree;Yes;Fan-tailed and Pallid Cuckoo;1870000;NA;NA;Resident
+347;Budgerigar;Melopsittacus undulatus;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;Granivore;Ground;Cavity;Tree;NA;;7160000;NA;NA;Resident
+348;Lincoln's Sparrow;Melospiza lincolnii;NA;Shrubland - Boreal & Shrubland - Temperate & Grassland - Temperate;Omnivorous;Ground and Shrub;Open;Ground and Shrub;Yes;Brown-headed Cowbird;8130000;NA;NA;Migratory
+349;Song Sparrow;Melospiza melodia;NA;Marine Intertidal - Sandy Shoreline and/or Beaches, Sand Bars, Spits, Etc & Marine Intertidal - Salt Marshes (Emergent Grasses);Omnivorous;Ground and Shrub;Open;Ground and Shrub;Yes;Brown-headed cowbird;24000000;2800;NA;Migratory
+350;European Bee-eater;Merops apiaster;NA;Forest - Temperate & Shrubland - Temperate;Insectivorous;Air;Cavity;Ground;No;;12800000;2400;NA;Migratory
+351;Rosy Bee-eater;Merops malimbicus;NA;Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry;Insectivorous;Air;Cavity;Ground;No;;2610000;NA;NA;Migratory
+352;Little Bee-eater;Merops pusillus;NA;Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry;Insectivorous;Air;Cavity;Ground;No;;22000000;NA;NA;Resident
+353;Brown-eared Bulbul ;Hypsipetes amaurotis;Microscelis;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;NA;Open;Shrub and tree;NA;;NA;NA;NA;NA
+354;Black Kite;Milvus migrans;NA;Forest - Temperate & Savanna - Dry & Desert - Hot;Omnivorous;Ground / Water;Open;Tree;;;159000000;4900;0;Migratory
+355;Flappet Lark;Mirafra rufocinnamomea;NA;Savanna - Dry & Shrubland - Subtropical/Tropical Dry;Omnivorous;Ground;Closed;Ground;NA;;18800000;NA;NA;Resident
+356;Brown-headed Cowbird;Molothrus ater;NA;Forest - Temperate;Omnivorous;Ground;NA;NA;Yes;Paratize 220 known species;15500000;2000;NA;Migratory
+357;African Dusky Flycatcher;Muscicapa adusta;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;Omnivorous;Ground, shrub and tree;Open;Shrub and tree;Yes;Klaas's Red-chested, Jacoin Cuckoo and Green-backed Honeyguide;13700000;3400;NA;Resident
+358;Spotted Flycatcher;Muscicapa striata;NA;Forest - Temperate & Shrubland - Temperate;Omnivorous;Ground, shrub and tree;Open;Shrub and tree;No;;19500000;2200;NA;Migratory
+359;Short-crested Flycatcher;Myiarchus ferox;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Shrub and tree;Cavity;Shrub;Yes;Shiny cowbird;13600000;1000;NA;Resident
+360;Russet-crowned Warbler;Myiothlypis coronata;NA;Forest - Subtropical/Tropical Moist Montane;Insectivorous;Shrub and tree;Closed;Ground and Shrub;NA;;NA;NA;NA;Resident
+361;Flavescent warbler;Myiothlypis flaveola;Basileuterus flaveolus;Forest - Subtropical/Tropical Dry;Insectivorous;Ground and Shrub;Closed;Ground and Shrub;NA;;NA;NA;NA;NA
+362;Buff-rumped Warbler;Myiothlypis leucophrys;Basileuterus fulvicauda;Forest - Subtropical/Tropical Moist Lowland & Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls);Insectivorous;Ground and Shrub;Closed;Ground;Yes;Shiny cowbird;NA;NA;NA;NA
+363;Arnot's Chat;Myrmecocichla arnotti;NA;Savanna - Dry;Insectivorous;Ground, shrub and tree;Cavity;Tree;No;;4550000;1750;NA;Resident
+364;Bronze Sunbird;Nectarinia kilimensis;NA;Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry;Omnivorous;Shrub;Closed;Shrub and tree;Yes;Klaas's Cuckoo;4160000;2350;1000;Resident
+365;Babbling Starling;Neocichla gutturalis;NA;Savanna - Dry;Omnivorous;Ground;Cavity;Tree;NA;;1660000;NA;NA;Resident
+366;White-tailed Ant-thrush;Neocossyphus poensis;NA;Forest - Subtropical/Tropical Moist Lowland;Insectivorous;Ground and Shrub;NA;NA;NA;;6240000;1500;NA;Resident
+367;Brown Boobook;Ninox scutulata;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground & Air;Cavity;Tree;NA;;15300000;1500;NA;Resident
+368;Helmeted Guineafowl;Numida meleagris;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry & Grassland - Temperate & Desert - Hot;Omnivorous;Ground and Shrub;Open;Ground;Yes;Parasitize Spur winged goose;24500000;3000;NA;Resident
+369;White-throated antbird;Oneillornis salvini;Gymnopithys salvini;Forest - Subtropical/Tropical Moist Lowland;Insectivorous;Ground and Shrub;Cavity;Tree;NA;;NA;NA;NA;NA
+370;Slender-billed Starling;Onychognathus tenuirostris;NA;Forest - Subtropical/Tropical Moist Montane & Rocky areas (eg. inland cliffs, mountain peaks);Omnivorous;Ground, shrub and tree;Open;Ground;NA;;2850000;4250;1200;Resident
+371;African Golden Oriole;Oriolus auratus;NA;Forest - Subtropical/Tropical Moist Lowland & Savanna - Dry;Omnivorous;Ground and Tree;Open;Tree;Yes;Rarely by cuckoo;14300000;1850;NA;Migratory
+372;Western Black-headed Oriole;Oriolus brachyrhynchus;NA;NA;Omnivorous;Shrub and tree;Open;Tree;NA;;NA;NA;NA;NA
 373;Yellow-bellied Tit;Pardaliparus venustulus;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Shrub;Cavity;Shrub;NA;;NA;NA;NA;NA
-374;Spotted Pardalote;Pardalotus punctatus;NA;Forest - Temperate &  Savanna - Dry;;;;;;;6910000;2000;NA;Resident
-375;Striated Pardalote;Pardalotus striatus;NA;Forest - Temperate & Shrubland - Temperate;;;;;;;9930000;2000;NA;Migratory
-376;Northern Waterthrush;Parkesia noveboracensis;Seuirus;Forest - Temperate & Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls);;;;;;;NA;NA;NA;NA
-377;Woodhouse's Antpecker;Parmoptila woodhousei;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;3320000;NA;NA;Resident
-378;Yellow-billed Cardinal;Paroaria capitata;NA;Shrubland - Subtropical/Tropical Moist;;;;;;;2780000;500;NA;Resident
-379;Red-cowled Cardinal;Paroaria dominicana;NA;Shrubland - Subtropical/Tropical Dry;;;;;;;1340000;1200;NA;Resident
+374;Spotted Pardalote;Pardalotus punctatus;NA;Forest - Temperate &  Savanna - Dry;Omnivorous;Tree;Cavity;Ground;NA;;6910000;2000;NA;Resident
+375;Striated Pardalote;Pardalotus striatus;NA;Forest - Temperate & Shrubland - Temperate;Omnivorous;Tree;Cavity;Ground and tree;NA;;9930000;2000;NA;Migratory
+376;Northern Waterthrush;Parkesia noveboracensis;Seuirus;Forest - Temperate & Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls);Omnivorous;Ground;Cavity;Ground and tree;Yes;Brown-headed cowbird;NA;NA;NA;NA
+377;Woodhouse's Antpecker;Parmoptila woodhousei;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Tree;Closed;Tree;NA;;3320000;NA;NA;Resident
+378;Yellow-billed Cardinal;Paroaria capitata;NA;Shrubland - Subtropical/Tropical Moist;Omnivorous;Ground and Shrub;Open;Shrub and tree;NA;;2780000;500;NA;Resident
+379;Red-cowled Cardinal;Paroaria dominicana;NA;Shrubland - Subtropical/Tropical Dry;Omnivorous;Ground;Open;Tree;NA;Few info on breeding.;1340000;1200;NA;Resident
 380;Great Tit;Parus major;NA;Forest - Temperate;Omnivorous;Ground, shrub and tree;Cavity;Shrub and tree;NA;;89800000;4420;NA;Resident
-381;House Sparrow;Passer domesticus;NA;Artificial/Terrestrial - Urban Areas;;;;;;;76600000;4500;NA;Resident
+381;House Sparrow;Passer domesticus;NA;Artificial/Terrestrial - Urban Areas;Omnivorous;Ground and Shrub;Cavity;Buildings and tree;No;;76600000;4500;NA;Resident
 382;Savannah Sparrow;Passerculus sandwichensis;NA;Marine Coastal/Supratidal - Sea Cliffs and Rocky Offshore Islands & Shrubland - Temperate;Omnivorous;Ground;Open;Ground;Yes;Brood parasite: Brown-headed Cowbird;13400000;4000;NA;Migratory
-383;Red Fox-sparrow;Passerella iliaca;NA;Forest - Temperate;;;;;;;3530000;NA;NA;Migratory
-384;Coal Tit;Periparus ater;NA;Forest - Temperate & Forest - Boreal;;;;;;;52500000;4570;NA;Migratory
-385;Cliff Swallow;Petrochelidon pyrrhonota;NA;Forest - Temperate & Grassland - Temperate;;;;;;;4160000;3000;NA;Migratory
-386;White-whiskered Hermit;Phaethornis yaruqui;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;252000;2000;NA;Resident
-387;Great Cormorant;Phalacrocorax carbo;NA;Forest - Subtropical/Tropical Moist Lowland & Wetlands (inland) - Permanent Saline, Brackish or Alkaline Lakes & Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands & Wetlands (inland) - Permanent Freshwater Lakes (over 8ha) & Marine Neritic - Subtidal Rock and Rocky Reefs;;;;;;;304000000;NA;NA;Migratory
-388;Moustached Wren;Pheugopedius genibarbis;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;8860000;1600;NA;Resident
-389;South Island Saddleback;Philesturnus carunculatus;NA;Forest - Temperate;;;;;;;84200;600;0;Resident
-390;Black-spotted Bare-eye;Phlegopsis nigromaculata;NA;Forest - Subtropical/Tropical Moist Lowland & Forest - Subtropical/Tropical Swamp;;;;;;;6080000;900;NA;Resident
-391;Common Redstart;Phoenicurus phoenicurus;NA;Forest - Subtropical/Tropical Dry & Shrubland - Subtropical/Tropical Dry;;;;;;;19700000;2900;NA;Migratory
-392;Patagonian Sierra-finch;Phrygilus patagonicus;NA;Forest - Temperate & Shrubland - Temperate;;;;;;;1210000;1800;NA;Migratory
-393;Grey-olive Greenbul;Phyllastrephus cerviniventris;NA;Shrubland - Subtropical/Tropical Moist;;;;;;;2500000;NA;NA;Resident
-394;Yellow-streaked Greenbul;Phyllastrephus flavostriatus;NA;Forest - Subtropical/Tropical Moist Montane;;;;;;;3420000;3000;NA;Resident
-395;Icterine Greenbul;Phyllastrephus icterinus;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;3160000;NA;NA;Resident
-396;Arctic Warbler;Phylloscopus borealis;NA;Shrubland - Boreal;;;;;;;8280000;2500;NA;Migratory
-397;Common Chiffchaff;Phylloscopus collybita;NA;Forest - Temperate & Forest - Boreal;;;;;;;15300000;3300;NA;Migratory
-398;Hume's Leaf-warbler;Phylloscopus humei;NA;Forest - Temperate;;;;;;;4710000;3980;2000;Migratory
-399;Iberian Chiffchaff;Phylloscopus ibericus;Phylloscopus brehmi;Forest - Subtropical/Tropical Dry & Shrubland - Mediterranean-type Shrubby Vegetation;;;;;;;NA;NA;NA;NA
-400;Western Crowned Leaf-warbler;Phylloscopus occipitalis;NA;Forest - Temperate & Forest - Subtropical/Tropical Moist Lowland;;;;;;;486000;3200;2100;Migratory
-401;Grey-cheeked Warbler;Phylloscopus poliogenys;Seicercus poliogenys;Forest - Temperate;;;;;;;NA;NA;NA;NA
+383;Red Fox-sparrow;Passerella iliaca;NA;Forest - Temperate;Omnivorous;Ground and Shrub;Open;Ground and Shrub;Yes;Rarely by Brown-headed Cowbird;3530000;NA;NA;Migratory
+384;Coal Tit;Periparus ater;NA;Forest - Temperate & Forest - Boreal;Omnivorous;Ground and Tree;Cavity;Tree;No;;52500000;4570;NA;Migratory
+385;Cliff Swallow;Petrochelidon pyrrhonota;NA;Forest - Temperate & Grassland - Temperate;Insectivorous;Air;Cavity;Cliff;No;;4160000;3000;NA;Migratory
+386;White-whiskered Hermit;Phaethornis yaruqui;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;NA;Closed;NA;NA;;252000;2000;NA;Resident
+387;Great Cormorant;Phalacrocorax carbo;NA;Forest - Subtropical/Tropical Moist Lowland & Wetlands (inland) - Permanent Saline, Brackish or Alkaline Lakes & Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands & Wetlands (inland) - Permanent Freshwater Lakes (over 8ha) & Marine Neritic - Subtidal Rock and Rocky Reefs;Piscivore;Water;Open;Ground, shrub, tree and cliff;NA;;304000000;NA;NA;Migratory
+388;Moustached Wren;Pheugopedius genibarbis;NA;Forest - Subtropical/Tropical Moist Lowland;NA;Shrub;Closed;NA;NA;;8860000;1600;NA;Resident
+389;South Island Saddleback;Philesturnus carunculatus;NA;Forest - Temperate;Omnivorous;Ground, shrub and tree;Cavity;Tree;No;;84200;600;0;Resident
+390;Black-spotted Bare-eye;Phlegopsis nigromaculata;NA;Forest - Subtropical/Tropical Moist Lowland & Forest - Subtropical/Tropical Swamp;Insectivorous;Ground and Shrub;Cavity;Tree;NA;;6080000;900;NA;Resident
+391;Common Redstart;Phoenicurus phoenicurus;NA;Forest - Subtropical/Tropical Dry & Shrubland - Subtropical/Tropical Dry;Omnivorous;Ground, shrub and tree;Cavity;Tree;Yes;Common cuckoo;19700000;2900;NA;Migratory
+392;Patagonian Sierra-finch;Phrygilus patagonicus;NA;Forest - Temperate & Shrubland - Temperate;Omnivorous;Ground, shrub and tree;Open;Ground, shrub and tree;NA;;1210000;1800;NA;Migratory
+393;Grey-olive Greenbul;Phyllastrephus cerviniventris;NA;Shrubland - Subtropical/Tropical Moist;Omnivorous;Ground and Shrub;Open;NA;NA;;2500000;NA;NA;Resident
+394;Yellow-streaked Greenbul;Phyllastrephus flavostriatus;NA;Forest - Subtropical/Tropical Moist Montane;Omnivorous;Shrub and tree;Open;Shrub;No;;3420000;3000;NA;Resident
+395;Icterine Greenbul;Phyllastrephus icterinus;NA;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Shrub and tree;Open;Shrub and tree;No;;3160000;NA;NA;Resident
+396;Arctic Warbler;Phylloscopus borealis;NA;Shrubland - Boreal;Insectivorous;Shrub and tree;Open;Ground and Cavity;No;;8280000;2500;NA;Migratory
+397;Common Chiffchaff;Phylloscopus collybita;NA;Forest - Temperate & Forest - Boreal;Insectivorous;Ground, shrub and tree;Open;Ground and Shrub;No;;15300000;3300;NA;Migratory
+398;Hume's Leaf-warbler;Phylloscopus humei;NA;Forest - Temperate;Insectivorous;Ground, shrub and tree;Closed;Ground and Cavity;Yes;Lesser Cuckoo;4710000;3980;2000;Migratory
+399;Iberian Chiffchaff;Phylloscopus ibericus;Phylloscopus brehmi;Forest - Subtropical/Tropical Dry & Shrubland - Mediterranean-type Shrubby Vegetation;NA;NA;NA;NA;NA;;NA;NA;NA;NA
+400;Western Crowned Leaf-warbler;Phylloscopus occipitalis;NA;Forest - Temperate & Forest - Subtropical/Tropical Moist Lowland;Insectivorous;Shrub and tree;Cavity;Buildings and tree;Yes;Oriental and Lesser Cuckoos;486000;3200;2100;Migratory
+401;Grey-cheeked Warbler;Phylloscopus poliogenys;Seicercus poliogenys;Forest - Temperate;Insectivorous;Shrub;Closed;Ground;NA;Poorly  known;NA;NA;NA;NA
 402;Pallas's Leaf-warbler;Phylloscopus proregulus;NA;Forest - Boreal;Insectivorous;Shrub and tree;Open;Tree;NA;;2150000;1700;1500;Migratory
-403;Yellow-throated Woodland-warbler;Phylloscopus ruficapilla;NA;Forest - Subtropical/Tropical Moist Montane;;;;;;;3730000;2350;NA;Resident
-404;Greenish Warbler;Phylloscopus trochiloides;NA;Forest - Boreal;;;;;;;7170000;4500;NA;Migratory
-405;Willow Warbler;Phylloscopus trochilus;NA;Forest - Temperate;;;;;;;22200000;1000;NA;Migratory
-406;Black-billed Magpie;Pica hudsonia;NA;Forest - Temperate & Artificial/Terrestrial - Urban Areas;;;;;;;13700000;NA;NA;Migratory
-407;Yellow-billed magpie;Pica nutalli;NA;Forest - Temperate & Artificial/Terrestrial - Rural Gardens;;;;;;;NA;NA;NA;NA
-408;Eurasian Magpie;Pica pica;NA;Forest - Temperate & Artificial/Terrestrial - Urban Areas;;;;;;;58600000;NA;NA;Migratory
+403;Yellow-throated Woodland-warbler;Phylloscopus ruficapilla;NA;Forest - Subtropical/Tropical Moist Montane;Insectivorous;Shrub and tree;Closed;Ground and Shrub;Yes;African Emerald Cuckoo;3730000;2350;NA;Resident
+404;Greenish Warbler;Phylloscopus trochiloides;NA;Forest - Boreal;Omnivorous;Ground, shrub and tree;NA;Ground and Cavity;NA;;7170000;4500;NA;Migratory
+405;Willow Warbler;Phylloscopus trochilus;NA;Forest - Temperate;Insectivorous;Ground, shrub and tree;Closed;Ground and Shrub;No;;22200000;1000;NA;Migratory
+406;Black-billed Magpie;Pica hudsonia;NA;Forest - Temperate & Artificial/Terrestrial - Urban Areas;Omnivorous;Ground /Air;Closed;Shrub and tree;No;;13700000;NA;NA;Migratory
+407;Yellow-billed magpie;Pica nutalli;NA;Forest - Temperate & Artificial/Terrestrial - Rural Gardens;Omnivorous;Ground /Air;Closed;Tree;No;;NA;NA;NA;NA
+408;Eurasian Magpie;Pica pica;NA;Forest - Temperate & Artificial/Terrestrial - Urban Areas;Omnivorous;Ground /Air;Open/Closed;Tree;Yes;Great spotted cuckoo, Large Hawk Cuckoo and Western Koel;58600000;NA;NA;Migratory
 409;Red-throated Piping-guan;Pipile cujubi;NA;Forest - Subtropical/Tropical Moist Lowland;NA;Ground;NA;NA;NA;Very few things known about this species;2810000;NA;NA;Resident
-410;Green-tailed Towhee;Pipilo chlorurus;NA;Shrubland - Subtropical/Tropical Dry & Shrubland - Mediterranean-type Shrubby Vegetation;;;;;;;2680000;NA;NA;Migratory
-411;Spotted Towhee;Pipilo maculatus;NA;Forest - Subtropical/Tropical Moist Montane;;;;;;;7390000;3300;NA;Migratory
-412;Golden-headed Manakin;Pipra erythrocephala;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;NA;NA;NA;NA
-413;Red-headed Manakin;Pipra rubrocapilla;NA;Forest - Subtropical/Tropical Moist Lowland;;;;;;;NA;NA;NA;NA
-414;Red Tanager;Piranga flava;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;;;;;;;9510000;2050;600;Migratory
+410;Green-tailed Towhee;Pipilo chlorurus;NA;Shrubland - Subtropical/Tropical Dry & Shrubland - Mediterranean-type Shrubby Vegetation;Omnivorous;Ground and Shrub;Open;Ground and Shrub;Yes;Brown-headed cowbird;2680000;NA;NA;Migratory
+411;Spotted Towhee;Pipilo maculatus;NA;Forest - Subtropical/Tropical Moist Montane;Omnivorous;Ground and Shrub;Op;Ground and Shrub;Yes;Brown-headed and Bronzed Cowbirds;7390000;3300;NA;Migratory
+412;Golden-headed Manakin;Ceratopipra erythrocephala;Pipra;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground / Air;Open;Shrub and tree;NA;;NA;NA;NA;NA
+413;Red-headed Manakin;Ceratopipra rubrocapilla;Pipra;Forest - Subtropical/Tropical Moist Lowland;Omnivorous;Ground / Air;NA;Shrub and tree;NA;Very few things known about this species;NA;NA;NA;NA
+414;Red Tanager;Piranga flava;NA;Forest - Subtropical/Tropical Dry & Savanna - Dry;Omnivorous;Tree;Open;Tree;NA;;9510000;2050;600;Migratory
 415;Baglafecht Weaver;Ploceus baglafecht;NA;Forest - Subtropical/Tropical Dry & Grassland - Subtropical/Tropical Dry;;;;;;;6710000;NA;NA;Resident
 416;Cape Weaver;Ploceus capensis;NA;Savanna - Dry & Shrubland - Subtropical/Tropical High Altitude;;;;;;;1320000;NA;NA;Resident
 417;Village Weaver;Ploceus cucullatus;NA;Artificial/Terrestrial - Rural Gardens;;;;;;;23900000;NA;NA;Resident
