@@ -5,10 +5,22 @@
 
 -----
 
-### **data**
+### Repository structure
 
-Contains raw data for runing conducting analyses \*
-**`MalAvi_7393012.csv`** \[MalAvi ’Host and site\]
-table’(<http://mbio-serv2.mbioekol.lu.se/bcgi/malaviReport.cgi?report4=Hosts+And+Sites+Table>)
+#### data
+
+Raw data for runing conducting analyses, including the following
+datasets:
+
+  - **MalAvi\_7393012.csv** ‘Host and site table’ from the [MalAvi
+    Database](http://mbio-serv2.mbioekol.lu.se/bcgi/malaviReport.cgi?report4=Hosts+And+Sites+Table)
+  - **anage\_data.txt** Data on longeivtiy from the [AnAge
+    databse](https://genomics.senescence.info/species/)
+
+#### R
+
+Contains custom functions
+
+\*s
 
 -----

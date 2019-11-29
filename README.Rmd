@@ -20,14 +20,12 @@ knitr::opts_chunk$set(
 #### data
 
 Raw data for runing conducting analyses, including the following datasets:
-* **`MalAvi_7393012.csv`** [MalAvi 'Host and site] table'(http://mbio-serv2.mbioekol.lu.se/bcgi/malaviReport.cgi?report4=Hosts+And+Sites+Table) 
-* **`anage_data.txt`** [AnAge databse](https://genomics.senescence.info/species/)
+
+* **MalAvi_7393012.csv** 'Host and site table' from the [MalAvi Database](http://mbio-serv2.mbioekol.lu.se/bcgi/malaviReport.cgi?report4=Hosts+And+Sites+Table) 
+* **anage_data.txt** Data on longeivtiy from the [AnAge databse](https://genomics.senescence.info/species/)
  
 #### R
 
 Contains custom functions
-
-*s
-
 
 ***
