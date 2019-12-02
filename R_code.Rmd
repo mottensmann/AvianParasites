@@ -1,0 +1,124 @@
+---
+title: "R_code"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Required packages
+
+```{r}
+library(magrittr)
+library(rredlist)
+library(readr)
+```
+
+
+## Query IUCN data
+
+The [IUCN Redlist API](http://apiv3.iucnredlist.org/api/v3/docs) is queried using the `rredlist`[^1] package. Using this service requires a token (see Link above on how to get access).
+
+```{r}
+## load the token. The token is not provided here!
+load("RedListAPI.RData")
+```
+
+
+```{r, eval=FALSE}
+## NOT RUN: Redo so once taxonomy list is completed!
+## list all 1576 taxons
+taxon <- lapply(list.files("data/Species_split/", full.names = T), read.csv) %>% 
+  do.call("rbind",.)
+taxon <- taxon[["Species"]] %>% as.character()
+
+## retrieve common names
+common.names <- pbapply::pblapply(taxon, function(x) {
+ query <- rredlist::rl_common_names(x, key = RedLIstAPI, parse = T)
+ if (length(query[["result"]]) > 0) {
+ df <- data.frame(name = query[["name"]],
+                  query[["result"]]) %>% 
+   dplyr::filter(., primary == "TRUE")
+ return(df[1,c("name", "taxonname")])
+ } else {
+   df <- data.frame(name = query[["name"]], taxonname = "Unknown")
+   return(df)
+ }
+ }) %>% 
+  do.call("rbind",.) %>% 
+  ## correct all scientific names before continouing!
+  dplyr::filter(., taxonname != "Unknown")
+
+## unknown names
+unknown.names <- taxon[-which(taxon %in% common.names$name)]
+
+## retrieve habitats
+habitats <- pbapply::pblapply(common.names[["name"]], function(x) {
+  query <- rredlist::rl_habitats(as.character(x), key = RedLIstAPI, parse = T)
+  return(query[["result"]])
+  
+}) %>% set_names(., value =  common.names$name)
+
+## retrieve main accounts
+redlist <- pbapply::pblapply(common.names[["name"]], function(x) {
+  query <- rredlist::rl_search(as.character(x), key = RedLIstAPI, parse = T)
+  return(query[["result"]])
+}) %>% 
+  do.call("rbind",.)
+
+save(redlist, file =  "data/redlist.RData")
+save(habitats, file =  "data/habitats.RData")
+save(common.names, file = "data/common.names.RData")
+save(unknown.names, file = "data/unknown.names.RData")
+```
+
+## EltonTraits
+
+Standardised Species-level foraging and diet attributes are available from the [EltonTraits 1.0](http://www.esapubs.org/archive/ecol/E095/178/)[^2] database. In this dataset, foraging strata and diet types are available on a semi-quantitative scale giving the relative importance for each taxon (values from 0 to 100 in steps of 10). 
+
+```{r, eval=FALSE}
+download.file(url = "http://www.esapubs.org/archive/ecol/E095/178/BirdFuncDat.txt",
+              destfile = "data/BirdFuncDat.txt",
+              quiet = T,
+              cacheOK = T)
+```
+
+```{r, warning=FALSE, message=FALSE}
+BirdFuncDat <-
+  read_delim("data/BirdFuncDat.txt", "\t", trim_ws = T, skip_empty_rows = T)
+```
+
+## AnAge 
+
+The [AnAge](https://genomics.senescence.info/species/)[^3] Database provides proxies of longevity
+
+```{r, eval=FALSE}
+## download zp file
+download.file(url = "http://genomics.senescence.info/species/dataset.zip",
+              destfile = "data/AnAge.zip",
+              quiet = T)
+## extract data table
+unzip(zipfile = "data/AnAge.zip", files = "anage_data.txt", exdir = "data")
+## delete zip file
+unlink("data/AnAge.zip")
+```
+
+```{r, warning=FALSE, message=FALSE}
+AnAge <- 
+  read_delim("data/anage_data.txt", "\t", trim_ws = T, skip_empty_rows = T)
+AnAge[["taxon.name"]] <- paste(AnAge[["Genus"]], AnAge[["Species"]]) 
+```
+
+## Merge data
+
+Bring together all the resources ... and:
+
+1. Unifying habitats: (e.g. merging related categories & building hierachical categories)
+2. Adding additional RedList variables
+4. Adding sample metadata (e.g. coords)
+5. Solve taxnonmy issues by two columns 'taxon.malavi' and 'taxon.hbw' allowing to match entries in a two-way join.
+
+[^1]: Scott Chamberlain (2018). rredlist: 'IUCN' Red List Client. R package version 0.5.0. https://CRAN.R-project.org/package=rredlist
+[^2]: Hamish Wilman, Jonathan Belmaker, Jennifer Simpson, Carolina de la Rosa, Marcelo M. Rivadeneira, and Walter Jetz. 2014. EltonTraits 1.0: Species-level foraging attributes of the world’s birds and mammals. Ecology 95:2027. http://dx.doi.org/10.1890/13-1917.1
+[^3]: Tacutu, R., Craig, T., Budovsky, A., Wuttke, D., Lehmann, G., Taranukha, D., Costa, J., Fraifeld, V. E., de Magalhaes, J. P. (2013) "Human Ageing Genomic Resources: Integrated databases and tools for the biology and genetics of ageing." Nucleic Acids Research 41(D1):D1027-D1033

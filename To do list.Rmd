@@ -1,9 +1,0 @@
----
-title: "To Do List"
-output: html_notebook
----
-
-1. Unifying habitats: (e.g. merging related categories & building hierachical categories)
-2. Adding additional RedList variables
-3. Adding AnAge data where available
-4. Adding sample metadata (e.g. coords)
