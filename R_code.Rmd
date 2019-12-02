@@ -1,6 +1,6 @@
 ---
-title: "R_code"
-output: html_document
+title: "*R-code*"
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
