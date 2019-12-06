@@ -10,74 +10,84 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Required packages
 
 ```{r}
-library(magrittr)
-library(rredlist)
-library(readr)
+library(magrittr) # tidy coding
+library(rredlist) # IUCN Queries
+library(readr) # reading tables
+library(taxize) # checking taxon names
 ```
 
 
 ## Query IUCN data
 
-The [IUCN Redlist API](http://apiv3.iucnredlist.org/api/v3/docs) is queried using the `rredlist`[^1] package. Using this service requires a token (see Link above on how to get access).
+The [IUCN Redlist API](http://apiv3.iucnredlist.org/api/v3/docs) is queried using the `rredlist`[^1] package. Using this service requires a token (see Link above on how to get access). The function `iucn_query` executes the query and outputs four files that are saved within the folder `data`.
 
 ```{r}
 ## load the token. The token is not provided here!
 load("RedListAPI.RData")
 ```
 
-
 ```{r, eval=FALSE}
-## NOT RUN: Redo so once taxonomy list is completed!
-## list all 1576 taxons
-taxon <- lapply(list.files("data/Species_split/", full.names = T), read.csv) %>% 
-  do.call("rbind",.)
-taxon <- taxon[["Species"]] %>% as.character()
+## read taxon names
+taxon <- readxl::read_xlsx("data/dataset_mo.xlsx")
+taxon <- taxon[["taxon.iucn"]] %>% as.character()
+dim(taxon) # 1576 species in total 
+# taxon <- lapply(list.files("data/Species_split/", full.names = T), read.csv) %>%
+#   do.call("rbind",.)
+# taxon <- taxon[["Species"]] %>% as.character()
 
-## retrieve common names
-common.names <- pbapply::pblapply(taxon, function(x) {
- query <- rredlist::rl_common_names(x, key = RedLIstAPI, parse = T)
- if (length(query[["result"]]) > 0) {
- df <- data.frame(name = query[["name"]],
-                  query[["result"]]) %>% 
-   dplyr::filter(., primary == "TRUE")
- return(df[1,c("name", "taxonname")])
- } else {
-   df <- data.frame(name = query[["name"]], taxonname = "Unknown")
-   return(df)
- }
- }) %>% 
-  do.call("rbind",.) %>% 
-  ## correct all scientific names before continouing!
-  dplyr::filter(., taxonname != "Unknown")
+## source script and run the query
+source("R/iucn_query.R")
+iucn_query(taxon = taxon, key = RedLIstAPI)
+```
 
-## unknown names
-unknown.names <- taxon[-which(taxon %in% common.names$name)]
 
-## retrieve habitats
-habitats <- pbapply::pblapply(common.names[["name"]], function(x) {
-  query <- rredlist::rl_habitats(as.character(x), key = RedLIstAPI, parse = T)
-  return(query[["result"]])
-  
-}) %>% set_names(., value =  common.names$name)
+### Extract habitats 
 
-## retrieve main accounts
-redlist <- pbapply::pblapply(common.names[["name"]], function(x) {
-  query <- rredlist::rl_search(as.character(x), key = RedLIstAPI, parse = T)
-  return(query[["result"]])
-}) %>% 
-  do.call("rbind",.)
+For most species there a several habitats listed (from a total of > 90 terms), sometimes distinguished by `season` (e.g. Breeding Season, Non-Breeding Season, Passage & Resident). Additionally, a boolean codes `majorimportance` im some cases. Therefore, as a mean of selecting main habitats in a objective manner, we selected natural habitats (i.e. ignoring all terms including the keyword "Artifical") for each species as follows:
 
-save(redlist, file =  "data/redlist.RData")
-save(habitats, file =  "data/habitats.RData")
-save(common.names, file = "data/common.names.RData")
-save(unknown.names, file = "data/unknown.names.RData")
+1. When available, we only considered habitats listed as `majorimportance`
+2. When seasons were distinguished we only selected `Breeding Season`
+3. Habitat with *'Marginal'* `suitability` were not considered.  
+
+```{r, warning=F, message=F}
+## load output of iucn_query
+load("data/habitats.RData") 
+load("data/common.names.RData")
+df <- readxl::read_xlsx("data/dataset_mo.xlsx") %>% 
+  dplyr::filter(., taxon.iucn %in% names(habitats))
+
+## select habitats for each species
+source("R/select_habitats.R")
+habitat.matrix <- lapply(df[["taxon.iucn"]], select_habitats, habitats = habitats) %>%   do.call("rbind",.)  %>% 
+  set_rownames(., df[["taxon.iucn"]])
+
+## get all terms 
+habitat.names <-
+  lapply(df[["taxon.iucn"]], select_habitats, habitats = habitats, out = "names") %>% 
+  set_names(., df[["taxon.iucn"]]) %>% 
+  unlist()
+habitat.names <- data.frame(taxon.iucn = names(habitat.names),
+                            habitats = habitat.names)
+
+names(common.names) <- c("taxon.iucn", "taxon.english")
+
+
+## get coarser categories, ie forest, grassland, wetland etc.
+source("R/habitat_categorisation.R")
+habitat.coarse <- habiat_categorisation(habitat.matrix = habitat.matrix, 
+                              path = "data/simplified_habitat_scheme.xlsx" )
+
+
+df[["Common name"]] <- NULL
+df[["Main Habitat Breeding season"]] <- NULL
 ```
 
 ## EltonTraits
 
-Standardised Species-level foraging and diet attributes are available from the [EltonTraits 1.0](http://www.esapubs.org/archive/ecol/E095/178/)[^2] database. In this dataset, foraging strata and diet types are available on a semi-quantitative scale giving the relative importance for each taxon (values from 0 to 100 in steps of 10). 
+Standardised Species-level foraging and diet attributes are available from the [EltonTraits 1.0](http://www.esapubs.org/archive/ecol/E095/178/)[^2] database. In this dataset, foraging strata and diet types (*'Elton´s Niche'*) are available on a semi-quantitative scale giving the relative importance for each taxon (values from 0 to 100 in steps of 10). 
 
 ```{r, eval=FALSE}
+## download EltonTraits
 download.file(url = "http://www.esapubs.org/archive/ecol/E095/178/BirdFuncDat.txt",
               destfile = "data/BirdFuncDat.txt",
               quiet = T,
@@ -85,8 +95,24 @@ download.file(url = "http://www.esapubs.org/archive/ecol/E095/178/BirdFuncDat.tx
 ```
 
 ```{r, warning=FALSE, message=FALSE}
+## fewer species than in dataset due to lumping/splitting of species
 BirdFuncDat <-
-  read_delim("data/BirdFuncDat.txt", "\t", trim_ws = T, skip_empty_rows = T)
+  read_delim("data/BirdFuncDat.txt", "\t", trim_ws = T, skip_empty_rows = T) %>% 
+  dplyr::filter(., Scientific %in% df[["taxon.eltontraits"]])
+BirdFuncDat[["taxon.eltontraits"]] <- BirdFuncDat[["Scientific"]]
+
+## Function to find synonyms in species names
+# source("R/match_synonyms.R")
+# df <- data.frame(taxon.iucn = dataset[["taxon.iucn"]],
+#                  taxon.hbw = dataset[["taxon.hbw"]],
+#                  taxon.malavi = dataset[["taxon.malavi"]],
+#                  taxon.english = common.names[["taxon.english"]]) %>% 
+#   dplyr::mutate_all(., as.character)
+
+# test <-
+  # match_synonyms(df = df,
+                 # BirdFuncDat = BirdFuncDat)
+# write.csv(data.frame(taxon = dataset$taxon.iucn, match = test), "data/temp.csv")
 ```
 
 ## AnAge 
@@ -102,15 +128,82 @@ download.file(url = "http://genomics.senescence.info/species/dataset.zip",
 unzip(zipfile = "data/AnAge.zip", files = "anage_data.txt", exdir = "data")
 ## delete zip file
 unlink("data/AnAge.zip")
-```
 
-```{r, warning=FALSE, message=FALSE}
 AnAge <- 
   read_delim("data/anage_data.txt", "\t", trim_ws = T, skip_empty_rows = T)
-AnAge[["taxon.name"]] <- paste(AnAge[["Genus"]], AnAge[["Species"]]) 
+AnAge[["taxon.iucn"]] <- paste(AnAge[["Genus"]], AnAge[["Species"]]) 
 ```
 
+
 ## Merge data
+
+* Get rid of captive individuals (`r (275/7248)*100`)
+* Get rid of hybrides 
+* Define climate zones based on climate lcoation
+
+Merge all datasets into one and format. 
+
+```{r, message=FALSE, warning=FALSE}
+## Join datasets
+dataset <- 
+  ## common name
+  dplyr::left_join(common.names, df, by = "taxon.iucn") %>% 
+  ## habitat names
+  dplyr::left_join(., habitat.names, by = "taxon.iucn") %>% 
+  ## habitat categories
+  dplyr::left_join(., habitat.coarse, by = "taxon.iucn") %>% 
+  ## Elton´s niche
+  dplyr::left_join(., BirdFuncDat, by = "taxon.eltontraits")
+  
+## load IUCN classifications
+load("data/redlist.RData")
+redlist[["taxon.iucn"]] <- redlist[["scientific_name"]]
+dataset <- dplyr::left_join(dataset, redlist, by = "taxon.iucn")
+
+## reformat
+data <- data.frame(
+  ## Taxonomy
+  scientific_name = as.factor(dataset[["taxon.iucn"]]),
+  scientfic_malavi = as.factor(dataset[["taxon.malavi"]]),
+  order = as.factor(dataset[["order"]]),
+  family = as.factor(dataset[["family"]]),
+  genus = as.factor(dataset[["genus"]]),
+  pass_nonpass = as.factor(dataset[["PassNonPass"]]),
+  common_name = as.factor(dataset[["main_common_name"]]),
+  ## Redlist category
+  redlist_category = as.factor(dataset[["category"]]),
+  population_trend = as.factor(dataset[["population_trend"]]),
+  movements = as.factor(dataset[["Movements"]]),
+  ## distribution
+  elevation_upper = as.numeric(dataset[["elevation_upper"]]),
+  elevation_lower = as.numeric(dataset[["elevation_lower"]]),
+  ## diet & foraging
+  nocturnal = as.factor(dataset[["Nocturnal"]]),
+  diet_category = as.factor(dataset[["Diet-5Cat"]]), 
+  body_mass = dataset[["BodyMass-Value"]],
+  forstrat_watbelowsurf = dataset[["ForStrat-watbelowsurf"]],
+  forstrat_wataroundsurf = dataset[["ForStrat-wataroundsurf"]],
+  forstrat_ground = dataset[["ForStrat-ground"]],
+  forstrat_understory = dataset[["ForStrat-understory"]],
+  forstrat_midhigh = dataset[["ForStrat-midhigh"]],
+  forstrat_canopy = dataset[["ForStrat-canopy"]],
+  forstrat_aearial = dataset[["ForStrat-aerial"]],
+  ## habitat and nest sites 
+  nest_type = as.factor(dataset[["Nest type"]]),
+  nest_site = as.factor(dataset[["Nest site"]]),
+  habitat_names = as.character(dataset[["habitats"]]),
+  habitat_category = as.factor(dataset[["habitat"]])
+  )
+```
+
+
+```{r}
+?hclust
+hc <- hclust(dist(USArrests), "ave")
+plot(hc)
+plot(hc, hang = -1)
+```
+
 
 Bring together all the resources ... and:
 
@@ -118,6 +211,8 @@ Bring together all the resources ... and:
 2. Adding additional RedList variables
 4. Adding sample metadata (e.g. coords)
 5. Solve taxnonmy issues by two columns 'taxon.malavi' and 'taxon.hbw' allowing to match entries in a two-way join.
+
+* Having a binomial coding single/major importance habitat?
 
 [^1]: Scott Chamberlain (2018). rredlist: 'IUCN' Red List Client. R package version 0.5.0. https://CRAN.R-project.org/package=rredlist
 [^2]: Hamish Wilman, Jonathan Belmaker, Jennifer Simpson, Carolina de la Rosa, Marcelo M. Rivadeneira, and Walter Jetz. 2014. EltonTraits 1.0: Species-level foraging attributes of the world’s birds and mammals. Ecology 95:2027. http://dx.doi.org/10.1890/13-1917.1

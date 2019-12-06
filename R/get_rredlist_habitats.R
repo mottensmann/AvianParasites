@@ -3,7 +3,7 @@
 
 ## daten abrufen für z.B. Tangara palmarum.
 load("RedListAPI.RData")
-rredlist::rl_habitats(name = "Erythrogenys erythrogenys", 
+rredlist::rl_habitats(name = "Tangara palmarum", 
                       key = RedLIstAPI)
 
 
