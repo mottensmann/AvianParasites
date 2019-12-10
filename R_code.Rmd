@@ -28,18 +28,19 @@ load("RedListAPI.RData")
 
 ```{r, eval=FALSE}
 ## read taxon names
-taxon <- readxl::read_xlsx("data/dataset_mo.xlsx")
+taxon <- readxl::read_xlsx("data/dataset_combined.xlsx")
 taxon <- taxon[["taxon.iucn"]] %>% as.character()
-dim(taxon) # 1576 species in total 
-# taxon <- lapply(list.files("data/Species_split/", full.names = T), read.csv) %>%
-#   do.call("rbind",.)
-# taxon <- taxon[["Species"]] %>% as.character()
 
 ## source script and run the query
 source("R/iucn_query.R")
 iucn_query(taxon = taxon, key = RedLIstAPI)
 ```
 
+```{r, eval=FALSE, echo=FALSE}
+## check for problems to access the IUCN data
+malavi <- readr::read_delim("data/MalAvi_host_and_site_coord.csv", delim = ";")
+load("data/unknown.names.RData")
+```
 
 ### Extract habitats 
 
@@ -53,7 +54,7 @@ For most species there a several habitats listed (from a total of > 90 terms), s
 ## load output of iucn_query
 load("data/habitats.RData") 
 load("data/common.names.RData")
-df <- readxl::read_xlsx("data/dataset_mo.xlsx") %>% 
+df <- readxl::read_xlsx("data/dataset_combined.xlsx") %>% 
   dplyr::filter(., taxon.iucn %in% names(habitats))
 
 ## select habitats for each species
@@ -97,22 +98,33 @@ download.file(url = "http://www.esapubs.org/archive/ecol/E095/178/BirdFuncDat.tx
 ```{r, warning=FALSE, message=FALSE}
 ## fewer species than in dataset due to lumping/splitting of species
 BirdFuncDat <-
-  read_delim("data/BirdFuncDat.txt", "\t", trim_ws = T, skip_empty_rows = T) %>% 
-  dplyr::filter(., Scientific %in% df[["taxon.eltontraits"]])
+  read_delim("data/BirdFuncDat.txt", "\t", trim_ws = T, skip_empty_rows = T) 
+# %>% 
+#   dplyr::filter(., Scientific %in% df[["taxon.eltontraits"]])
 BirdFuncDat[["taxon.eltontraits"]] <- BirdFuncDat[["Scientific"]]
 
-## Function to find synonyms in species names
-# source("R/match_synonyms.R")
-# df <- data.frame(taxon.iucn = dataset[["taxon.iucn"]],
-#                  taxon.hbw = dataset[["taxon.hbw"]],
-#                  taxon.malavi = dataset[["taxon.malavi"]],
-#                  taxon.english = common.names[["taxon.english"]]) %>% 
-#   dplyr::mutate_all(., as.character)
 
-# test <-
-  # match_synonyms(df = df,
-                 # BirdFuncDat = BirdFuncDat)
-# write.csv(data.frame(taxon = dataset$taxon.iucn, match = test), "data/temp.csv")
+df2 <- df
+df2 <- lapply(1:nrow(df2), function(x) {
+  if (is.na(df2[["taxon.hbw"]][x])) df2[["taxon.hbw"]][x] <- df2[["taxon.iucn"]][x]
+return(df2[x,])
+}) %>% 
+  do.call("rbind",.)
+
+## Function to find synonyms in species names
+source("R/match_synonyms.R")
+dfx <- data.frame(taxon.iucn = df2[["taxon.iucn"]],
+                 taxon.hbw = df2[["taxon.hbw"]],
+                 taxon.malavi = df2[["taxon.malavi"]],
+                 taxon.english = common.names[["taxon.english"]]) %>%
+  dplyr::mutate_all(., as.character)
+
+dfx[["taxon.elton"]] <- 
+match_synonyms(df = dfx,
+BirdFuncDat = BirdFuncDat)
+
+View(dplyr::filter(dfx, is.na(taxon.elton)))
+write.csv(data.frame(taxon = dfx$taxon.iucn, match = dfx$taxon.elton), "data/temp.csv")
 ```
 
 ## AnAge 
@@ -198,10 +210,22 @@ data <- data.frame(
 
 
 ```{r}
-?hclust
-hc <- hclust(dist(USArrests), "ave")
+x <- dplyr::filter(dataset, 
+                   genus %in% c("Turdus", "Otus", "Buteo", "Falco", "Parus",
+                                "Passer", "Aquila", "Dendrocopus",
+                                "Asio"))
+rownames(x) <- x$taxon.iucn
+data.frame(var = names(x), seq = 1:ncol(x))
+
+x <- x[,c(22:31, 36:42, 47, 12, 6:7)]
+
+hc <- hclust(dist(x), "ave")
 plot(hc)
 plot(hc, hang = -1)
+```
+
+
+```{r}
 ```
 
 

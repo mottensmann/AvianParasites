@@ -29,7 +29,7 @@ iucn_query <- function(taxon = NULL, key = NULL) {
   ## unknown names
   unknown.names <- taxon[-which(taxon %in% common.names$name)]
   
-  ## retrieve habitats
+  # ## retrieve habitats
   habitats <- pbapply::pblapply(common.names[["name"]], function(x) {
     query <- rredlist::rl_habitats(as.character(x), key = RedLIstAPI, parse = T)
     return(query[["result"]])
@@ -40,7 +40,7 @@ iucn_query <- function(taxon = NULL, key = NULL) {
   redlist <- pbapply::pblapply(common.names[["name"]], function(x) {
     query <- rredlist::rl_search(as.character(x), key = RedLIstAPI, parse = T)
     return(query[["result"]])
-  }) %>% 
+  }) %>%
     do.call("rbind",.)
   
   ## save objects to file
