@@ -18,7 +18,7 @@ iucn_query <- function(taxon = NULL, key = NULL, .update = TRUE, path = "data") 
     load("data/common.names.RData")
     
     ## Check which records are not needed
-
+    
     taxon.not.asked <- character()
     if (any(which(!common.names[["name"]] %in% taxon))) {
       taxon.not.asked <- common.names[["name"]][which(!common.names[["name"]] %in% taxon)]
@@ -27,77 +27,83 @@ iucn_query <- function(taxon = NULL, key = NULL, .update = TRUE, path = "data") 
       habitats[taxon.not.asked] <- NULL
     } 
     
-     taxon.present <- character()
-     if (any(which(taxon %in% common.names[["name"]]))) {
-       taxon.present <- taxon[which(taxon %in% common.names[["name"]])]
-     }
-     
-     # which records are needed
+    taxon.present <- character()
+    if (any(which(taxon %in% common.names[["name"]]))) {
+      taxon.present <- taxon[which(taxon %in% common.names[["name"]])]
+    }
+    
+    # which records are needed
     taxon.missing <- character()
     if (any(which(!taxon %in% common.names[["name"]]))) {
       taxon.missing <- taxon[which(!taxon %in% common.names[["name"]])]
-      taxon <- taxon.missing
     }
+    taxon <- taxon.missing
   }
   
-  ## avoid duplicates
-  if (any(duplicated(taxon))) { 
-    cat("Read", length(taxon), "names.")
-    taxon <- unique(taxon)
-    cat("Keep", length(taxon), "unique ones.")  
-  }
-  if (any(duplicated(common.names[["name"]]))) {
-    common.names <- unique.data.frame(common.names)
-    redlist <- unique.data.frame(redlist)
-    habitats[which(duplicated(names(habitats)))] <- NULL
-  }
-  
-  ## retrieve common names
-  common.names.query <- pbapply::pblapply(taxon, function(x) {
-    query <- rredlist::rl_common_names(x, key = RedLIstAPI, parse = T)
-    if (length(query[["result"]]) > 0) {
-      df <- data.frame(name = query[["name"]],
-                       query[["result"]]) %>% 
-        dplyr::filter(., primary == "TRUE")
-      return(df[1,c("name", "taxonname")])
-    } else {
-      df <- data.frame(name = query[["name"]], taxonname = "Unknown")
-      return(df)
-    }
-  }) %>% 
-    do.call("rbind",.) %>% 
-    ## correct all scientific names before continouing!
-    dplyr::filter(., taxonname != "Unknown")
-  
-  ## unknown names
-  unknown.names <- taxon[-which(taxon %in% common.names$name)]
-  
-  # ## retrieve habitats
-  habitats.query <- pbapply::pblapply(common.names.query[["name"]], function(x) {
-    query <- rredlist::rl_habitats(as.character(x), key = RedLIstAPI, parse = T)
-    return(query[["result"]])
+  ## if length taxon is 0 stop here
+  if (length(taxon) > 0) {
     
-  }) %>% set_names(., value =  common.names.query$name)
-  
-  ## retrieve main accounts
-  redlist.query <- pbapply::pblapply(common.names.query[["name"]], function(x) {
-    query <- rredlist::rl_search(as.character(x), key = RedLIstAPI, parse = T)
-    return(query[["result"]])
-  }) %>%
-    do.call("rbind",.)
-  
-  ## Append to existing data
-  if (isTRUE(.update)) {
-    if (nrow(common.names.query) > 0) {
-      common.names <- rbind(common.names, common.names.query)
-      redlist <- rbind(redlist.query, redlist)
-      habitats <- append(habitats, habitats.query)
-    } 
+    ## avoid duplicates
+    if (any(duplicated(taxon))) { 
+      cat("Read", length(taxon), "names.")
+      taxon <- unique(taxon)
+      cat("Keep", length(taxon), "unique ones.")  
+    }
+    if (any(duplicated(common.names[["name"]]))) {
+      common.names <- unique.data.frame(common.names)
+      redlist <- unique.data.frame(redlist)
+      habitats[which(duplicated(names(habitats)))] <- NULL
+    }
+    
+    ## retrieve common names
+    common.names.query <- pbapply::pblapply(taxon, function(x) {
+      query <- rredlist::rl_common_names(x, key = RedLIstAPI, parse = T)
+      if (length(query[["result"]]) > 0) {
+        df <- data.frame(name = query[["name"]],
+                         query[["result"]]) %>% 
+          dplyr::filter(., primary == "TRUE")
+        return(df[1,c("name", "taxonname")])
+      } else {
+        df <- data.frame(name = query[["name"]], taxonname = "Unknown")
+        return(df)
+      }
+    }) %>% 
+      do.call("rbind",.) %>% 
+      ## correct all scientific names before continouing!
+      dplyr::filter(., taxonname != "Unknown")
+    
+    ## unknown names
+    unknown.names <- taxon[-which(taxon %in% common.names$name)]
+    
+    # ## retrieve habitats
+    habitats.query <- pbapply::pblapply(common.names.query[["name"]], function(x) {
+      query <- rredlist::rl_habitats(as.character(x), key = RedLIstAPI, parse = T)
+      return(query[["result"]])
+      
+    }) %>% set_names(., value =  common.names.query$name)
+    
+    ## retrieve main accounts
+    redlist.query <- pbapply::pblapply(common.names.query[["name"]], function(x) {
+      query <- rredlist::rl_search(as.character(x), key = RedLIstAPI, parse = T)
+      return(query[["result"]])
+    }) %>%
+      do.call("rbind",.)
+    
+    ## Append to existing data
+    if (isTRUE(.update)) {
+      if (nrow(common.names.query) > 0) {
+        common.names <- rbind(common.names, common.names.query)
+        redlist <- rbind(redlist.query, redlist)
+        habitats <- append(habitats, habitats.query)
+      } 
+    }
+    
+    save(redlist, file =  "data/redlist.RData")
+    save(habitats, file =  "data/habitats.RData")
+    save(common.names, file = "data/common.names.RData")
+    save(unknown.names, file = "data/unknown.names.RData")  
+  } else {
+    cat("Nothing to update\n")
   }
-  
-  save(redlist, file =  "data/redlist.RData")
-  save(habitats, file =  "data/habitats.RData")
-  save(common.names, file = "data/common.names.RData")
-  save(unknown.names, file = "data/unknown.names.RData")  
 }
 
