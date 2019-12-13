@@ -20,6 +20,8 @@ match_synonyms <- function(df = NULL, BirdFuncDat = NULL) {
       return(df[["taxon.malavi"]][x])
     } else if (df[["taxon.english"]][x] %in% BirdFuncDat[["English"]]) {
       return(BirdFuncDat[["Scientific"]][BirdFuncDat[["English"]] %in% df[["taxon.english"]][x]])
+    } else if (!is.na(df[["taxon.elton"]][x])) {
+      return(df[["taxon.elton"]][x])
     } else {
       return(NA)
     }
