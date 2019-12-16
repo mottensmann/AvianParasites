@@ -13,9 +13,13 @@
 #' Output formats are either a `'matrix'`` where the importance of all habitat types (columns) are coded 
 #' as 1 (=important) or 0 (=not important). Alternatively, a vector of habitat `'names'`` for the focal species is returned.
 #' 
+#' @param major.importance 
+#' logical 
+#' 
 #' @export
 #' 
-select_habitats <- function(name = NULL, habitats = habitats, out = c("matrix", "names")) {
+select_habitats <- function(name = NULL, habitats = habitats, out = c("matrix", "names"),
+                            major.importance = TRUE) {
   
   out <- match.arg(out)
   ## get all natural habitats
@@ -39,10 +43,12 @@ select_habitats <- function(name = NULL, habitats = habitats, out = c("matrix", 
     hab <- dplyr::filter(hab, season == "Resident")
   }
   ## now check for major importance
+  if (isTRUE(major.importance)) {
   if (any(hab[["majorimportance"]] == "Yes")) {
     hab <- dplyr::filter(hab, majorimportance == "Yes")
   }
-  
+  }
+    
   if (out == "matrix") {
     ## create matrix to capture output
     output <- matrix(0, nrow = 1, ncol = length(natural.habitats)) %>% 
