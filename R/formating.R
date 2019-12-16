@@ -86,6 +86,9 @@ download.file(url = "http://www.esapubs.org/archive/ecol/E095/178/BirdFuncDat.tx
               quiet = T,
               cacheOK = T)
 
+### Rechecking merged data
+
+tab=read.table("C://Users/Tony/Documents/Phd Bielefeld/Data manip/Host-shift _cospeciation/dataset_combined.txt", sep="\t")
 
 
 
