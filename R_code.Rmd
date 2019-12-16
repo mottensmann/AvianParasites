@@ -13,7 +13,6 @@ knitr::opts_chunk$set(echo = TRUE)
 library(magrittr) # tidy coding
 library(rredlist) # IUCN Queries
 library(readr) # reading tables
-library(taxize) # checking taxon names
 ```
 
 
@@ -26,17 +25,18 @@ The [IUCN Redlist API](http://apiv3.iucnredlist.org/api/v3/docs) is queried usin
 load("RedListAPI.RData")
 ```
 
-```{r, eval=FALSE}
+```{r, eval=T}
 ## read taxon names
 taxon <- readxl::read_xlsx("data/dataset_combined.xlsx")
-taxon <- taxon[["taxon.iucn"]] %>% as.character()
+taxon <- taxon[["taxon.iucn"]] %>% as.character() 
+# taxon <- taxon[1049:1576]
 
 ## source script and run the query
 source("R/iucn_query.R")
-iucn_query(taxon = taxon, key = RedLIstAPI)
+iucn_query(taxon = taxon, key = RedLIstAPI, .update = T)
 ```
 
-```{r, eval=FALSE, echo=FALSE}
+```{r, eval=T, echo=FALSE}
 ## check for problems to access the IUCN data
 malavi <- readr::read_delim("data/MalAvi_host_and_site_coord.csv", delim = ";")
 load("data/unknown.names.RData")
@@ -48,25 +48,34 @@ For most species there a several habitats listed (from a total of > 90 terms), s
 
 1. When available, we only considered habitats listed as `majorimportance`
 2. When seasons were distinguished we only selected `Breeding Season`
-3. Habitat with *'Marginal'* `suitability` were not considered.  
+3. Habitats of *'Marginal'* `suitability` were not considered.  
 
 ```{r, warning=F, message=F}
 ## load output of iucn_query
 load("data/habitats.RData") 
 load("data/common.names.RData")
-df <- readxl::read_xlsx("data/dataset_combined.xlsx") %>% 
-  dplyr::filter(., taxon.iucn %in% names(habitats))
+df <- readxl::read_xlsx("data/dataset_combined.xlsx") 
 
 ## select habitats for each species
 source("R/select_habitats.R")
-habitat.matrix <- lapply(df[["taxon.iucn"]], select_habitats, habitats = habitats) %>%   do.call("rbind",.)  %>% 
+habitat.matrix.major <- pbapply::pblapply(df[["taxon.iucn"]], select_habitats,
+                               habitats = habitats,
+                               major.importance = T) %>%
+  do.call("rbind",.)  %>% 
+  set_rownames(., df[["taxon.iucn"]])
+
+habitat.matrix.all <- pbapply::pblapply(df[["taxon.iucn"]], select_habitats,
+                               habitats = habitats,
+                               major.importance = F) %>%
+  do.call("rbind",.)  %>% 
   set_rownames(., df[["taxon.iucn"]])
 
 ## get all terms 
 habitat.names <-
-  lapply(df[["taxon.iucn"]], select_habitats, habitats = habitats, out = "names") %>% 
+  pbapply::pblapply(df[["taxon.iucn"]], select_habitats, habitats = habitats, out = "names") %>% 
   set_names(., df[["taxon.iucn"]]) %>% 
   unlist()
+
 habitat.names <- data.frame(taxon.iucn = names(habitat.names),
                             habitats = habitat.names)
 
@@ -75,12 +84,11 @@ names(common.names) <- c("taxon.iucn", "taxon.english")
 
 ## get coarser categories, ie forest, grassland, wetland etc.
 source("R/habitat_categorisation.R")
-habitat.coarse <- habiat_categorisation(habitat.matrix = habitat.matrix, 
+habitat.coarse <- habiat_categorisation(habitat.matrix = habitat.matrix.major, 
                               path = "data/simplified_habitat_scheme.xlsx" )
 
-
-df[["Common name"]] <- NULL
-df[["Main Habitat Breeding season"]] <- NULL
+df[["taxon.common"]] <- NULL
+df[["habitats"]] <- NULL
 ```
 
 ## EltonTraits
@@ -96,14 +104,12 @@ download.file(url = "http://www.esapubs.org/archive/ecol/E095/178/BirdFuncDat.tx
 ```
 
 ```{r, warning=FALSE, message=FALSE}
-## fewer species than in dataset due to lumping/splitting of species
+## load all entries that are available
 BirdFuncDat <-
   read_delim("data/BirdFuncDat.txt", "\t", trim_ws = T, skip_empty_rows = T) 
-# %>% 
-#   dplyr::filter(., Scientific %in% df[["taxon.eltontraits"]])
 BirdFuncDat[["taxon.eltontraits"]] <- BirdFuncDat[["Scientific"]]
 
-
+## if there is no taxon hbw entered, copy iucn nomencalture as dummy variable
 df2 <- df
 df2 <- lapply(1:nrow(df2), function(x) {
   if (is.na(df2[["taxon.hbw"]][x])) df2[["taxon.hbw"]][x] <- df2[["taxon.iucn"]][x]
@@ -111,19 +117,19 @@ return(df2[x,])
 }) %>% 
   do.call("rbind",.)
 
-## Function to find synonyms in species names
+## Function to find synonyms in species names to match entries
 source("R/match_synonyms.R")
 dfx <- data.frame(taxon.iucn = df2[["taxon.iucn"]],
-                 taxon.hbw = df2[["taxon.hbw"]],
-                 taxon.malavi = df2[["taxon.malavi"]],
-                 taxon.english = common.names[["taxon.english"]]) %>%
+                  taxon.hbw = df2[["taxon.hbw"]],
+                  taxon.malavi = df2[["taxon.malavi"]],
+                  taxon.elton = df2[["taxon.eltontraits"]]) %>%
+  dplyr::left_join(., common.names, by = "taxon.iucn") %>% 
   dplyr::mutate_all(., as.character)
 
-dfx[["taxon.elton"]] <- 
-match_synonyms(df = dfx,
-BirdFuncDat = BirdFuncDat)
+dfx[["taxon.elton"]] <- match_synonyms(df = dfx,
+                                       BirdFuncDat = BirdFuncDat)
 
-View(dplyr::filter(dfx, is.na(taxon.elton)))
+#View(dplyr::filter(dfx, is.na(taxon.elton)))
 write.csv(data.frame(taxon = dfx$taxon.iucn, match = dfx$taxon.elton), "data/temp.csv")
 ```
 
@@ -149,28 +155,31 @@ AnAge[["taxon.iucn"]] <- paste(AnAge[["Genus"]], AnAge[["Species"]])
 
 ## Merge data
 
-* Get rid of captive individuals (`r (275/7248)*100`)
-* Get rid of hybrides 
-* Define climate zones based on climate lcoation
+Taxonomic concepts are not always in concordance between authorities such as *HBW*, *BirdLife*, *Clements* or *IOC*. Furthermore, there are constant changes due to lumping and splitting of species but also renaming for other reasons occurs. Hence, we had to match entries stemming from (i) **MalAvi** (*which date?*), (ii) **HBW Alive** (December 2019) and (iii) **EltonTraits** (*2014?*). Notably, information for species which were until recently considered as subspecies only (e.g. Oriental Reed-warbler *Acrocephalus orientalis* & Great Reed-warbler *A. arundinaceus*), were not available from the EltonTraits database for considerable number of taxons. Here, we used the data available for respective sister species. Due to the high similarity and uncertain in distinguishin between species and subspecies these data are arguably represensative of the ecology of both taxons. (**Rephrasing needed !!!**) 
 
-Merge all datasets into one and format. 
+We have duplicates!!!
+
+Merge all datasets into one and format and simplify some factor levels. 
+
+* How to deal with captive individuals?
+* How to deal with hybrides ?
 
 ```{r, message=FALSE, warning=FALSE}
 ## Join datasets
 dataset <- 
   ## common name
-  dplyr::left_join(common.names, df, by = "taxon.iucn") %>% 
+  dplyr::left_join(df, unique.data.frame(common.names), by = "taxon.iucn") %>% 
   ## habitat names
-  dplyr::left_join(., habitat.names, by = "taxon.iucn") %>% 
+  dplyr::left_join(., unique.data.frame(habitat.names), by = "taxon.iucn") %>% 
   ## habitat categories
-  dplyr::left_join(., habitat.coarse, by = "taxon.iucn") %>% 
+  dplyr::left_join(., unique.data.frame(habitat.coarse), by = "taxon.iucn") %>% 
   ## Elton´s niche
   dplyr::left_join(., BirdFuncDat, by = "taxon.eltontraits")
   
 ## load IUCN classifications
 load("data/redlist.RData")
 redlist[["taxon.iucn"]] <- redlist[["scientific_name"]]
-dataset <- dplyr::left_join(dataset, redlist, by = "taxon.iucn")
+dataset <- dplyr::left_join(dataset, unique.data.frame(redlist), by = "taxon.iucn")
 
 ## reformat
 data <- data.frame(
@@ -185,7 +194,7 @@ data <- data.frame(
   ## Redlist category
   redlist_category = as.factor(dataset[["category"]]),
   population_trend = as.factor(dataset[["population_trend"]]),
-  movements = as.factor(dataset[["Movements"]]),
+  movements = as.factor(dataset[["movements"]]),
   ## distribution
   elevation_upper = as.numeric(dataset[["elevation_upper"]]),
   elevation_lower = as.numeric(dataset[["elevation_lower"]]),
@@ -201,8 +210,8 @@ data <- data.frame(
   forstrat_canopy = dataset[["ForStrat-canopy"]],
   forstrat_aearial = dataset[["ForStrat-aerial"]],
   ## habitat and nest sites 
-  nest_type = as.factor(dataset[["Nest type"]]),
-  nest_site = as.factor(dataset[["Nest site"]]),
+  nest_type = as.factor(dataset[["nest.type"]]),
+  nest_site = as.factor(dataset[["nest.site"]]),
   habitat_names = as.character(dataset[["habitats"]]),
   habitat_category = as.factor(dataset[["habitat"]])
   )
@@ -210,11 +219,43 @@ data <- data.frame(
 
 
 ```{r}
+
+data$diet_category %>% summary()
+  data$movements %>% summary()
+
+data$movements[data$movements == "migratory"] %>% length()
+
+
+  data$nest_type %>% summary()
+  data$nest_site %>% summary()
+  data$habitat_category %>% summary()
+
+write.csv(data, "data/dataset_combined_final.csv")  
+
+habitat.data.major <- cbind(data[,1:7], habitat.matrix.major) %>% 
+  as.data.frame()
+write.csv(habitat.data.major, "data/habitat_matrix_majorimportance.csv")
+habitat.data.all <- cbind(data[,1:7], habitat.matrix.all) %>% 
+  as.data.frame()
+write.csv(habitat.data.all, "data/habitat_matrix.csv")
+```
+
+```{r}
+## some checks
+if (any(is.na(data[["redlist_category"]]))) stop("NA´s in IUCN data")
+if (any(is.na(data[["diet_category"]]))) stop("NA´s in elton traits")
+```
+
+## Trying stuff
+
+```{r, eval=FALSE}
 x <- dplyr::filter(dataset, 
                    genus %in% c("Turdus", "Otus", "Buteo", "Falco", "Parus",
                                 "Passer", "Aquila", "Dendrocopus",
-                                "Asio"))
-rownames(x) <- x$taxon.iucn
+                                "Asio")) %>% 
+  as.data.frame()
+
+rownames(x) <- x$taxon.malavi
 data.frame(var = names(x), seq = 1:ncol(x))
 
 x <- x[,c(22:31, 36:42, 47, 12, 6:7)]
@@ -224,10 +265,22 @@ plot(hc)
 plot(hc, hang = -1)
 ```
 
+```{r, eval=FALSE}
+x <- dplyr::filter(habitat.data.all, 
+                   genus %in% c("Turdus", "Otus", "Buteo", "Falco", "Parus",
+                                "Passer", "Aquila", "Dendrocopus",
+                                "Asio")) %>% 
+  unique.data.frame()
+x <- habitat.data.all %>% unique.data.frame()
+rownames(x) <- x$scientfic_malavi
+data.frame(var = names(x), seq = 1:ncol(x))
 
-```{r}
+x <- x[,8:80]
+
+hc <- hclust(dist(x), "ave")
+plot(hc)
+plot(hc, hang = -1)
 ```
-
 
 Bring together all the resources ... and:
 
